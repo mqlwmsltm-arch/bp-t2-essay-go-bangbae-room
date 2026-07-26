@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-electric">
+    <title>소개 — 서울 밤문화 업종 정밀 비교 분석 가이드</title>
+    <meta name="description" content="광고와 허위 정보로 가득한 서울 밤문화 업종의 실체를 투명하게 분석합니다. 가격, 분위기, 인원, 목적이라는 4대 축선으로 구축된 밤의 노선도를 소개합니다.">
+    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 가라오케 펍 비교, 서울 밤문화 분석">
+    <link rel="canonical" href="https://essay.go-bangbae-room.xyz/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="소개 — 서울 밤문화 업종 정밀 비교 분석 가이드">
+    <meta property="og:description" content="광고와 허위 정보로 가득한 서울 밤문화 업종의 실체를 투명하게 분석합니다.">
+    <meta property="og:url" content="https://essay.go-bangbae-room.xyz/about.html">
+
+    <style>
+        /* RESET & BASE VARIABLES */
+        :root {
+            --bg-color: #08080c;
+            --text-color: #f4f4f9;
+            --accent-cyan: #00f0ff;
+            --accent-pink: #ff007f;
+            --accent-purple: #9d4edd;
+            --border-color: #ffffff;
+            --card-bg: #12121a;
+            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* RESPONSIVE-768 CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 768px;
+            border-left: 3px solid var(--border-color);
+            border-right: 3px solid var(--border-color);
+            background-color: #0d0d14;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            border-bottom: 3px solid var(--border-color);
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #12121a 0%, #08080c 100%);
+        }
+
+        .nav-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            color: var(--text-color);
+            text-shadow: 2px 2px 0px var(--accent-pink);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .nav-links a {
+            display: block;
+            text-align: center;
+            padding: 0.8rem;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.15s ease;
+            box-shadow: 3px 3px 0px var(--accent-cyan);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            background-color: var(--accent-pink);
+            color: #000;
+            box-shadow: none;
+            transform: translate(3px, 3px);
+        }
+
+        /* MAIN CONTENT AREA */
+        main {
+            padding: 2rem 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* BRUTALIST HERO BANNER */
+        .hero-banner {
+            border: 3px solid var(--border-color);
+            background-color: var(--accent-purple);
+            color: #000000;
+            padding: 2rem 1.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            box-shadow: 6px 6px 0px var(--accent-cyan);
+        }
+
+        .hero-banner::after {
+            content: "NIGHT TRANSIT MAP";
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: bold;
+            opacity: 0.5;
+        }
+
+        .hero-banner h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-banner p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        /* PERSONAL ANECDOTE SECTION (FRIENDLY TONE) */
+        .intro-story {
+            margin-bottom: 3rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            background-color: var(--accent-cyan);
+            color: #000;
+            padding: 0.2rem 0.6rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        .intro-story h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            color: var(--accent-cyan);
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            padding: 1.5rem;
+            box-shadow: 4px 4px 0px var(--accent-pink);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-card p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #d1d1e0;
+        }
+
+        .story-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-text {
+            color: var(--accent-pink);
+            font-weight: 700;
+        }
+
+        /* TRANSIT MAP ANALOGY GRID */
+        .transit-concept {
+            margin-bottom: 3rem;
+            border-top: 2px dashed var(--border-color);
+            padding-top: 2rem;
+        }
+
+        .transit-concept h2 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--accent-pink);
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .map-line-card {
+            border: 2px solid var(--border-color);
+            background-color: #161622;
+            padding: 1.2rem;
+            position: relative;
+            padding-left: 2.5rem;
+        }
+
+        .map-line-card::before {
+            content: "";
+            position: absolute;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+        }
+
+        .line-cyan::before { background-color: var(--accent-cyan); }
+        .line-pink::before { background-color: var(--accent-pink); }
+        .line-purple::before { background-color: var(--accent-purple); }
+        .line-white::before { background-color: var(--border-color); }
+
+        .line-number {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 900;
+            display: inline-block;
+            padding: 0.1rem 0.4rem;
+            background-color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        .line-cyan .line-number { color: var(--accent-cyan); border: 1px solid var(--accent-cyan); }
+        .line-pink .line-number { color: var(--accent-pink); border: 1px solid var(--accent-pink); }
+        .line-purple .line-number { color: var(--accent-purple); border: 1px solid var(--accent-purple); }
+        .line-white .line-number { color: var(--border-color); border: 1px solid var(--border-color); }
+
+        .map-line-card h3 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-line-card p {
+            font-size: 0.95rem;
+            color: #b8b8c7;
+        }
+
+        /* CRITERIA / VALUES */
+        .values-section {
+            background-color: #12121a;
+            border: 3px solid var(--border-color);
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 5px 5px 0px var(--accent-purple);
+        }
+
+        .values-section h2 {
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .values-list {
+            list-style: none;
+        }
+
+        .values-list li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .values-list li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            color: var(--accent-cyan);
+        }
+
+        .values-list li strong {
+            color: #fff;
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .values-list li span {
+            font-size: 0.95rem;
+            color: #a1a1b5;
+        }
+
+        /* CALL TO ACTION BUTTON */
+        .cta-box {
+            text-align: center;
+            padding: 2rem 1rem;
+            border: 2px solid var(--border-color);
+            background: linear-gradient(180deg, #0d0d14 0%, #1a1a26 100%);
+            margin-bottom: 2rem;
+        }
+
+        .cta-box p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--accent-cyan);
+            color: #000000;
+            font-weight: 900;
+            text-decoration: none;
+            border: 2px solid var(--border-color);
+            box-shadow: 4px 4px 0px var(--accent-pink);
+            font-size: 1.1rem;
+            transition: all 0.15s ease;
+        }
+
+        .cta-btn:hover {
+            box-shadow: none;
+            transform: translate(4px, 4px);
+            background-color: var(--accent-pink);
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 3px solid var(--border-color);
+            padding: 2rem 1.5rem;
+            background-color: #08080c;
+            font-size: 0.85rem;
+            color: #71717a;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-brand {
+            font-weight: 800;
+            color: var(--text-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #a1a1b5;
+            text-decoration: none;
+            border-bottom: 1px solid #a1a1b5;
+            padding-bottom: 2px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-cyan);
+            border-color: var(--accent-cyan);
+        }
+
+        .footer-copy {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            border-top: 1px solid #27272a;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        /* RESPONSIVE ADJUSTMENTS */
+        @media (min-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="nav-meta">
+                <span>SYSTEM: ONLINE</span>
+                <span>SEOUL NIGHT TRANSIT</span>
+            </div>
+            <div class="logo">밤의 노선도 : 서울 밤문화 업종 비교</div>
+            <nav class="nav-links">
+                <a href="/">홈</a>
+                <a href="/about" class="active">소개</a>
+                <a href="/compare">업종별 비교</a>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <!-- HERO BANNER -->
+            <div class="hero-banner">
+                <h1>왜 우리는 밤의 노선도가 필요할까요?</h1>
+                <p>복잡하게 얽힌 서울의 밤거리, 광고판에 가려진 업종별 실체를 한눈에 꿰뚫는 정보의 환승역입니다.</p>
+            </div>
+
+            <!-- STORY SECTION -->
+            <section class="intro-story">
+                <span class="section-tag">THE STORY</span>
+                <h2>인터넷에 널린 광고에 지치셨죠?</h2>
+                
+                <div class="story-card">
+                    <p>어쩌다 한 번 모임이나 회식 자리를 주도하게 될 때, 혹은 중요한 손님을 모셔야 할 때 다들 한 번쯤 검색해 보셨을 겁니다. 하지만 검색창을 가득 채우는 건 온통 <span class="highlight-text">"최저가 보장", "최고의 수질"</span> 같은 자극적이고 알맹이 없는 광고글뿐이었죠.</p>
+                    <p>정작 내가 궁금한 건 <strong>'가라오케와 셔츠룸의 정확한 시스템 차이가 뭔지', '내 예산과 인원에 딱 맞는 곳이 어디인지'</strong>인데 말이에요. 그 누구도 객관적인 비교 기준을 알려주지 않으니까요.</p>
+                    <p>그래서 이 블로그를 시작하게 되었어요. 복잡한 유흥 업종의 숲에서 길을 잃지 않도록, 명확한 정거장과 노선을 그려주는 <span class="highlight-text">교통지도</span> 역할을 해보고 싶었습니다.</p>
+                </div>
+            </section>
+
+            <!-- THE CONCEPT SECTION -->
+            <section class="transit-concept">
+                <span class="section-tag">OUR CONCEPT</span>
+                <h2>4대 축선으로 분석하는 밤의 노선도</h2>
+                <p style="margin-bottom: 1.5rem; color: #a1a1b5;">우리는 서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케, 펍 등)을 단순히 서열화하지 않습니다. 가장 합리적인 선택을 돕기 위해 다음 4가지 핵심 노선을 기준으로 정밀 비교합니다.</p>
+
+                <div class="map-grid">
+                    <div class="map-line-card line-cyan">
+                        <span class="line-number">LINE 01</span>
+                        <h3>가격 노선 (Price Line)</h3>
+                        <p>기본 주류 세트 구성, 테이블 시간당 비용, 팁 시스템 등 숨겨진 추가 비용 없이 투명하게 체감 단가를 비교합니다.</p>
+                    </div>
+
+                    <div class="map-line-card line-pink">
+                        <span class="line-number">LINE 02</span>
+                        <h3>분위기 노선 (Vibe Line)</h3>
+                        <p>조용하고 격식 있는 비즈니스 공간부터 캐주얼하고 파티 같은 역동적인 공간까지, 업종별 고유의 톤앤매너를 분석합니다.</p>
+                    </div>
+
+                    <div class="map-line-card line-purple">
+                        <span class="line-number">LINE 03</span>
+                        <h3>인원 노선 (Capacity Line)</h3>
+                        <p>독고(1인) 방문에 최적화된 곳부터, 3~4인 소규모 모임, 혹은 10인 이상의 단체 회식에 적합한 공간을 노선별로 매핑합니다.</p>
+                    </div>
+
+                    <div class="map-line-card line-white">
+                        <span class="line-number">LINE 04</span>
+                        <h3>목적 노선 (Purpose Line)</h3>
+                        <p>단순 친목 도모, 비즈니스 바이어 접대, 스트레스 해소 등 방문 목적에 따른 최적의 환승 경로를 제시합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VALUES SECTION -->
+            <section class="values-section">
+                <h2>블로그 운영의 철칙</h2>
+                <ul class="values-list">
+                    <li>
+                        <strong>1. 광고 제휴 배제</strong>
+                        <span>특정 업소나 에이전트의 후원을 받지 않습니다. 오직 정보의 투명성과 객관성만을 추구합니다.</span>
+                    </li>
+                    <li>
+                        <strong>2. 구체적인 정보 구조화</strong>
+                        <span>추상적인 묘사는 피하고, 시스템 특징과 운영 방식 등 직관적인 팩트 위주로 정리합니다.</span>
+                    </li>
+                    <li>
+                        <strong>3. 지속적인 데이터 갱신</strong>
+                        <span>트렌드에 따라 시시각각 변하는 밤문화 업종의 시스템 변화를 빠르게 추적하여 반영합니다.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- CTA BOX -->
+            <div class="cta-box">
+                <p>지금 내 상황에 가장 잘 맞는 업종은 무엇일까요?</p>
+                <a href="/compare" class="cta-btn">정밀 비교 분석 보러가기</a>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">밤의 노선도 (Night Transit Map)</div>
+                    <p>본 블로그는 서울 밤문화 업종의 구조적 차이와 시스템 정보를 제공하는 비영리 정보형 공간입니다. 건전하고 합리적인 소비 결정을 위한 길잡이가 되겠습니다.</p>
+                </div>
+                <div>
+                    <div class="footer-brand">바로가기</div>
+                    <div class="footer-links">
+                        <a href="/">홈으로</a>
+                        <a href="/about">소개</a>
+                        <a href="/compare">업종 비교</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 NIGHT TRANSIT MAP. ALL RIGHTS RESERVED.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-electric">
+    <title>트렌드 리포트 — 서울 밤문화 유흥 업종 비교 노선도</title>
+    <meta name="description" content="최근 서울 밤문화 유흥 업종(셔츠룸, 가라오케, 룸싸롱 등)의 트렌드 변화를 '가격·분위기·인원·목적'의 4대 축선으로 분석합니다. 나에게 딱 맞는 최적의 노선을 찾아보세요.">
+    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 가라오케 차이, 서울 밤문화 트렌드, 유흥 소비 패턴">
+    <link rel="canonical" href="https://essay.go-bangbae-room.xyz/blog-3.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서울 밤문화 트렌드 노선도 — 유흥 업종 비교 분석">
+    <meta property="og:description" content="지갑 사정과 모임 성격에 맞춘 서울 밤문화 업종별 실시간 트렌드 분석 가이드입니다.">
+    <meta property="og:url" content="https://essay.go-bangbae-room.xyz/blog-3.html">
+
+    <style>
+        /* Brutalist Avant-Garde & KR Night Electric Theme */
+        :root {
+            --bg-color: #080810;
+            --text-color: #ffffff;
+            --primary-neon: #00ffff; /* Electric Cyan */
+            --secondary-neon: #ff007f; /* Hot Magenta */
+            --accent-neon: #adff2f; /* Lime Green */
+            --dark-card: #121225;
+            --border-heavy: 3px solid #ffffff;
+            --border-neon-p: 3px solid #00ffff;
+            --border-neon-s: 3px solid #ff007f;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Responsive 768px Container */
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 15px;
+            border-left: var(--border-heavy);
+            border-right: var(--border-heavy);
+            background-color: #0a0a14;
+            min-height: 100vh;
+        }
+
+        /* Brutalist Header */
+        header {
+            border-bottom: var(--border-heavy);
+            padding: 30px 10px;
+            background: linear-gradient(135deg, #121225 0%, #080810 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "TREND";
+            position: absolute;
+            right: -20px;
+            bottom: -20px;
+            font-size: 8rem;
+            font-weight: 900;
+            color: rgba(255, 0, 127, 0.08);
+            z-index: 0;
+            letter-spacing: -5px;
+        }
+
+        .header-tag {
+            display: inline-block;
+            background-color: var(--secondary-neon);
+            color: #000;
+            font-weight: 900;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            transform: rotate(-1deg);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 1.2;
+            word-break: keep-all;
+            color: #fff;
+            text-shadow: 3px 3px 0px var(--primary-neon);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Navigation */
+        nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: var(--border-heavy);
+            background-color: #000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 5px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-right: 2px solid #333;
+            transition: all 0.2s ease;
+        }
+
+        nav a:last-child {
+            border-right: none;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-neon);
+            color: #000;
+        }
+
+        /* Hero Text / Narrative Intro */
+        .intro-box {
+            padding: 25px 15px;
+            border-bottom: var(--border-heavy);
+            background: #121225;
+            position: relative;
+        }
+
+        .intro-box p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            word-break: keep-all;
+        }
+
+        .intro-box p strong {
+            color: var(--accent-neon);
+        }
+
+        /* Transit Map Concept Grid */
+        .transit-map-section {
+            padding: 30px 15px;
+            border-bottom: var(--border-heavy);
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            border-left: 8px solid var(--primary-neon);
+            padding-left: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .transit-line {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .transit-line::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 10px;
+            bottom: 10px;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary-neon), var(--secondary-neon), var(--accent-neon));
+        }
+
+        .transit-node {
+            background: var(--dark-card);
+            border: 2px solid #333;
+            padding: 20px;
+            position: relative;
+            box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.1);
+        }
+
+        .transit-node::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 24px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--bg-color);
+            border: 4px solid var(--primary-neon);
+            z-index: 2;
+        }
+
+        .transit-node.magenta::before {
+            border-color: var(--secondary-neon);
+        }
+
+        .transit-node.lime::before {
+            border-color: var(--accent-neon);
+        }
+
+        .node-tag {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #000;
+            background-color: var(--primary-neon);
+            padding: 2px 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .node-tag.magenta {
+            background-color: var(--secondary-neon);
+        }
+
+        .node-tag.lime {
+            background-color: var(--accent-neon);
+        }
+
+        .transit-node h3 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .node-desc {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 12px;
+        }
+
+        /* 4-Axis Indicators */
+        .axis-indicators {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-top: 1px solid #222;
+        }
+
+        .axis-item {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .axis-item span {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        /* Relatable Anecdote Column */
+        .anecdote-section {
+            padding: 30px 15px;
+            background-color: #0d0d1a;
+            border-bottom: var(--border-heavy);
+        }
+
+        .speech-bubble {
+            background-color: var(--dark-card);
+            border: var(--border-neon-s);
+            padding: 20px;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 30px;
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: var(--secondary-neon) transparent;
+            display: block;
+            width: 0;
+        }
+
+        .speech-bubble h4 {
+            font-size: 1.1rem;
+            color: var(--secondary-neon);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .speech-bubble p {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        /* Trend Insights List */
+        .insight-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .insight-item {
+            border-left: 4px solid var(--accent-neon);
+            padding-left: 15px;
+        }
+
+        .insight-item h5 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .insight-item p {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+
+        /* Internal Links / Navigation Hub */
+        .hub-section {
+            padding: 30px 15px;
+            border-bottom: var(--border-heavy);
+            background: #000;
+        }
+
+        .hub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .hub-card {
+            border: 2px solid #333;
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.2s ease;
+            background: #080810;
+        }
+
+        .hub-card:hover {
+            border-color: var(--primary-neon);
+            transform: translateY(-2px);
+        }
+
+        .hub-card h4 {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            color: var(--primary-neon);
+        }
+
+        .hub-card p {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 30px 15px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+        }
+
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--primary-neon);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .faq-question::before {
+            content: "Q.";
+            margin-right: 8px;
+            color: var(--secondary-neon);
+        }
+
+        .faq-answer {
+            font-size: 0.9rem;
+            color: #ccc;
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: var(--border-heavy);
+            padding: 30px 15px;
+            background-color: #05050a;
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .axis-indicators {
+                grid-template-columns: 1fr;
+            }
+            .hub-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <div class="header-tag">Seoul Night Transit Map</div>
+            <h1>서울 밤문화 노선도:<br>유흥 업종 비교 트렌드 리포트</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="https://essay.go-bangbae-room.xyz">홈 / 가이드</a>
+            <a href="https://essay.go-bangbae-room.xyz/trend" class="active">트렌드 분석</a>
+            <a href="https://essay.go-bangbae-room.xyz#axis">4대 축선 비교</a>
+        </nav>
+
+        <!-- Intro Box -->
+        <section class="intro-box">
+            <p>
+                솔직히 요즘 지갑 사정 고려하면 모임 2차 갈 때 머리 아프잖아요? 예전처럼 무작정 "아무 데나 가자" 했다간 영수증 보고 서로 눈치 보기 십상이죠. 
+            </p>
+            <p>
+                그래서 이번 리포트에서는 서울 밤거리에서 가장 흔히 마주치는 대표 업종들을 <strong>'가격·분위기·인원·목적'</strong>이라는 4대 축선에 올려놓고 직관적으로 비교해 드립니다. 복잡한 유흥 생태계, 노선도 그리듯 한눈에 짚어 드릴게요!
+            </p>
+        </section>
+
+        <!-- Transit Map Section (Visual Grid) -->
+        <section class="transit-map-section">
+            <h2 class="section-title">환승 구간: 업종별 포지셔닝</h2>
+            
+            <div class="transit-line">
+                
+                <!-- Node 1 -->
+                <div class="transit-node">
+                    <span class="node-tag">가성비 & 대중교통 노선</span>
+                    <h3>셔츠룸 (Shirts Room)</h3>
+                    <p class="node-desc">최근 몇 년간 가장 높은 접근성을 보여주는 대중적인 선택지입니다. 시스템의 표준화가 잘 되어 있어 예측 가능한 지출 범위 내에서 움직이기 좋습니다.</p>
+                    <div class="axis-indicators">
+                        <div class="axis-item">가격대: <span>중하 (정찰제 위주)</span></div>
+                        <div class="axis-item">분위기: <span>캐주얼 & 에너제틱</span></div>
+                        <div class="axis-item">권장인원: <span>1~4인 소규모</span></div>
+                        <div class="axis-item">주목적: <span>편안한 비즈니스 / 친목</span></div>
+                    </div>
+                </div>
+
+                <!-- Node 2 -->
+                <div class="transit-node magenta">
+                    <span class="node-tag magenta">정통 & 비즈니스 노선</span>
+                    <h3>퍼블릭 / 정통 룸싸롱 (Public Room)</h3>
+                    <p class="node-desc">전통적인 대접이나 격식 있는 모임에서 여전히 견고한 위치를 차지합니다. 대화와 격식을 중요시하는 비즈니스 미팅에 적합한 구조를 가집니다.</p>
+                    <div class="axis-indicators">
+                        <div class="axis-item">가격대: <span>중상</span></div>
+                        <div class="axis-item">분위기: <span>차분함 & 격식 있음</span></div>
+                        <div class="axis-item">권장인원: <span>2~6인 중규모</span></div>
+                        <div class="axis-item">주목적: <span>바이어 접대 / 공식 모임</span></div>
+                    </div>
+                </div>
+
+                <!-- Node 3 -->
+                <div class="transit-node lime">
+                    <span class="node-tag lime">자유형 멀티 노선</span>
+                    <h3>가라오케 & 뮤직 펍 (Karaoke)</h3>
+                    <p class="node-desc">음악과 자유로운 분위기를 즐기는 그룹에게 최적화된 공간입니다. 시간당 비용이 비교적 저렴하고 인원수에 구애를 덜 받기 때문에 단체 회식의 마무리에 알맞습니다.</p>
+                    <div class="axis-indicators">
+                        <div class="axis-item">가격대: <span>하 (인원 분할 시 유리)</span></div>
+                        <div class="axis-item">분위기: <span>자유로움 & 셀프 유흥</span></div>
+                        <div class="axis-item">권장인원: <span>4~10인 대규모</span></div>
+                        <div class="axis-item">주목적: <span>동호회 뒷풀이 / 생일 파티</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Relatable Anecdote & Trend Insight -->
+        <section class="anecdote-section">
+            <div class="speech-bubble">
+                <h4>"부장님, 이번 2차는 어디로 가야 안 깨질까요?"</h4>
+                <p>
+                    지난주 동창회 총무를 맡았던 김 대리의 하소연입니다. 인원은 6명인데, 누구는 프라이빗한 대화를 원하고 누구는 그저 신나게 들이켜고 싶어 하죠. 이럴 때 <strong>'셔츠룸의 가성비'</strong>와 <strong>'가라오케의 개방성'</strong> 사이에서 길을 잃기 마련입니다. 기준점 없이 선택하면 비용은 비용대로 쓰고 만족도는 떨어집니다.
+                </p>
+            </div>
+
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 15px; color: var(--accent-neon);">요즘 소비자들이 움직이는 3가지 방향</h3>
+            <ul class="insight-list">
+                <li class="insight-item">
+                    <h5>1. 예측 가능한 정찰제의 선호</h5>
+                    <p>과거처럼 계산서를 받아보고 깜짝 놀라는 불확실성을 기피합니다. 정찰제 시스템이 정착된 셔츠룸 계열이 꾸준한 수요를 유지하는 이유입니다.</p>
+                </li>
+                <li class="insight-item">
+                    <h5>2. 목적 중심의 세분화</h5>
+                    <p>단순히 술을 마시는 것을 넘어, '대접'이 목적인지 '스트레스 해소'가 목적인지에 따라 업종 선택이 완전히 갈립니다.</p>
+                </li>
+                <li class="insight-item">
+                    <h5>3. 소형화되는 모임 규모</h5>
+                    <p>대형 회식보다는 2~3인의 소규모 정예 멤버로 움직이는 경향이 짙어지면서, 소인원에 특화된 룸 형태의 공간 선호도가 높아졌습니다.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Internal Links / Navigation Hub -->
+        <section class="hub-section">
+            <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 15px; color: #fff;">더 정밀한 비교 가이드가 필요하다면?</h3>
+            <div class="hub-grid">
+                <a href="https://essay.go-bangbae-room.xyz#axis-price" class="hub-card">
+                    <h4>가격 축선 정밀 비교</h4>
+                    <p>업종별 테이블 세팅비 및 추가 비용 구조 분석</p>
+                </a>
+                <a href="https://essay.go-bangbae-room.xyz#axis-vibe" class="hub-card">
+                    <h4>분위기 & 시스템 비교</h4>
+                    <p>셔츠룸 vs 가라오케 서비스 진행 방식의 핵심 차이</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">셔츠룸과 일반 퍼블릭 룸의 가장 큰 시스템 차이는 무엇인가요?</div>
+                <div class="faq-answer">
+                    가장 큰 차이는 진행 방식과 템포입니다. 셔츠룸은 특정 복장 전환 등의 명확한 콘셉트와 빠른 템포의 서비스를 지향하며 가격이 정형화되어 있습니다. 반면 퍼블릭 룸은 보다 정통적이고 차분한 대화 위주로 진행되어 비즈니스 접대에 더 적합한 성격을 띱니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">인원이 많을 때는 어떤 노선이 가장 유리할까요?</div>
+                <div class="faq-answer">
+                    5인 이상의 대규모 모임이면서 가성비를 챙겨야 한다면 가라오케 라인을 추천합니다. 룸당 고정 비용을 여러 명이서 나누어 내는 N분의 1 구조가 용이하여 1인당 부담액이 크게 낮아집니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">혼자 방문할 때(독고) 부담이 적은 업종은 어디인가요?</div>
+                <div class="faq-answer">
+                    최근 1인 방문객 비중이 높아진 셔츠룸의 경우, 혼자서도 부담 없이 이용할 수 있는 정찰제 패키지를 운영하는 곳이 많아 진입 장벽이 낮은 편입니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© Seoul Night Transit Map Project. All rights reserved.</p>
+            <p>본 블로그는 서울 밤문화 업종에 대한 객관적 비교와 정보 제공을 목적으로 운영됩니다. 불법 행위를 조장하거나 알선하지 않습니다.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

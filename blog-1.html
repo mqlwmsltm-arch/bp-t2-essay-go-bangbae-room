@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-electric">
+    <title>유흥 업종 비교 가이드 — 서울 밤의 노선도 분석</title>
+    <meta name="description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
+    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 가라오케 펍 비교, 서울 밤문화 분석">
+    <link rel="canonical" href="https://essay.go-bangbae-room.xyz/blog-1.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 업종 비교 — 합리적 선택을 위한 축선별 분석 가이드">
+    <meta property="og:description" content="서울 밤문화 업종을 4대 축으로 정밀 비교하는 정보 가이드입니다.">
+    
+    <style>
+        /* CSS reset & variables */
+        :root {
+            --bg-color: #08080c;
+            --text-color: #f3f3f7;
+            --neon-cyan: #00f3ff;
+            --neon-magenta: #ff007f;
+            --neon-yellow: #fffb00;
+            --dark-gray: #12121a;
+            --mid-gray: #222230;
+            --border-width: 3px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Responsive-768 Container */
+        .wrapper {
+            max-width: 768px;
+            margin: 0 auto;
+            border-left: var(--border-width) solid var(--neon-cyan);
+            border-right: var(--border-width) solid var(--neon-cyan);
+            background-color: var(--dark-gray);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header & Navigation */
+        header {
+            border-bottom: var(--border-width) solid var(--neon-cyan);
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--neon-cyan);
+            text-shadow: 2px 2px 0px var(--neon-magenta);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            border-color: var(--neon-magenta);
+            background: var(--neon-magenta);
+            color: #000;
+            box-shadow: 3px 3px 0px var(--neon-cyan);
+        }
+
+        /* Brutalist Hero Section */
+        .hero {
+            padding: 40px 20px;
+            border-bottom: var(--border-width) solid var(--neon-magenta);
+            background: linear-gradient(180deg, #12121a 0%, #08080c 100%);
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: repeating-linear-gradient(45deg, var(--neon-cyan), var(--neon-cyan) 10px, transparent 10px, transparent 20px);
+        }
+
+        .badge {
+            background-color: var(--neon-yellow);
+            color: #000;
+            font-weight: 900;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            border: 2px solid #000;
+            box-shadow: 3px 3px 0px var(--neon-magenta);
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 900;
+            line-height: 1.2;
+            color: var(--text-color);
+            word-break: keep-all;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: var(--neon-cyan);
+            text-shadow: 3px 3px 0px var(--neon-magenta);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #b0b0c5;
+            margin-top: 10px;
+            word-break: keep-all;
+        }
+
+        /* Main Content Grid */
+        .content {
+            padding: 30px 20px;
+        }
+
+        /* Anecdote Box */
+        .anecdote-box {
+            background-color: var(--mid-gray);
+            border: 2px solid var(--neon-cyan);
+            padding: 20px;
+            margin-bottom: 40px;
+            position: relative;
+            box-shadow: 5px 5px 0px var(--neon-magenta);
+        }
+
+        .anecdote-box h3 {
+            color: var(--neon-yellow);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .anecdote-box p {
+            font-size: 0.95rem;
+            color: #d1d1e0;
+            line-height: 1.7;
+        }
+
+        /* Section Title Style */
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            border-left: 6px solid var(--neon-magenta);
+            padding-left: 12px;
+            margin: 40px 0 20px 0;
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-title span {
+            font-size: 0.8rem;
+            color: var(--neon-cyan);
+            font-weight: normal;
+        }
+
+        /* Concept: Night Transit Map Matrix */
+        .transit-map-container {
+            border: 2px solid var(--text-color);
+            background: #000;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .transit-header {
+            background: var(--text-color);
+            color: #000;
+            padding: 10px 15px;
+            font-weight: 900;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .transit-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            border-top: 2px solid var(--text-color);
+        }
+
+        .transit-node {
+            padding: 20px;
+            border-bottom: 2px solid #222;
+            position: relative;
+        }
+
+        .transit-node:last-child {
+            border-bottom: none;
+        }
+
+        .node-line {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--neon-cyan);
+            z-index: 1;
+        }
+
+        .transit-node:first-child .node-line {
+            top: 50%;
+        }
+
+        .transit-node:last-child .node-line {
+            height: 50%;
+        }
+
+        .node-marker {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            border: 4px solid var(--neon-magenta);
+            z-index: 2;
+        }
+
+        .node-content {
+            margin-left: 40px;
+        }
+
+        .node-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--neon-cyan);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .node-tag {
+            font-size: 0.75rem;
+            background: #222;
+            color: var(--neon-yellow);
+            padding: 2px 6px;
+            border: 1px solid var(--neon-yellow);
+        }
+
+        .node-desc {
+            font-size: 0.9rem;
+            color: #b0b0c5;
+        }
+
+        /* Comparative Cards */
+        .comparison-card {
+            border: 3px solid var(--neon-cyan);
+            background: var(--dark-gray);
+            margin-bottom: 25px;
+            box-shadow: 6px 6px 0px #000;
+        }
+
+        .card-header {
+            background: var(--neon-cyan);
+            color: #000;
+            padding: 12px 15px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .meta-item {
+            border-bottom: 1px solid var(--mid-gray);
+            padding-bottom: 8px;
+        }
+
+        .meta-label {
+            font-size: 0.8rem;
+            color: #8888a0;
+            margin-bottom: 2px;
+        }
+
+        .meta-value {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #d1d1e0;
+            line-height: 1.7;
+        }
+
+        /* Flow Process styling */
+        .flow-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            background: #12121e;
+            border-left: 4px solid var(--neon-yellow);
+            padding: 15px;
+        }
+
+        .step-num {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--neon-yellow);
+            margin-right: 15px;
+            line-height: 1;
+        }
+
+        .step-text h4 {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+            color: var(--text-color);
+        }
+
+        .step-text p {
+            font-size: 0.88rem;
+            color: #a0a0b5;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            border: 2px solid var(--mid-gray);
+            margin-bottom: 15px;
+            background: #101018;
+        }
+
+        .faq-q {
+            padding: 15px;
+            font-weight: 800;
+            font-size: 1rem;
+            border-bottom: 2px solid var(--mid-gray);
+            color: var(--neon-yellow);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-a {
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #d1d1e0;
+            line-height: 1.6;
+            background: #0b0b10;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            border-top: var(--border-width) solid var(--neon-cyan);
+            background: #000;
+            padding: 30px 20px;
+            font-size: 0.85rem;
+            color: #777788;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .card-meta-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  <meta property="og:url" content="https://essay.go-bangbae-room.xyz/blog-1.html">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">NIGHT LINE</a>
+            <nav>
+                <a href="/" class="active">가이드</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">NIGHTLIFE MAP IN SEOUL</div>
+        <h1>유흥 업종 비교 <span>4대 축선 관통 가이드</span></h1>
+        <p>복잡하게 얽힌 서울 밤의 업종 구조를 가격, 분위기, 인원, 목적이라는 명확한 4대 축으로 풀어낸 실무형 분석 노선도입니다.</p>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="content">
+
+        <!-- Introduction & Anecdote -->
+        <div class="anecdote-box">
+            <h3>💡 헷갈리던 밤거리의 이정표</h3>
+            <p>
+                "처음 모임을 주선할 때, 혹은 비즈니스 자리를 잡아야 할 때 다들 한 번씩 고민하셨을 겁니다. 셔츠룸과 일반 룸싸롱은 뭐가 다르고, 가라오케는 어떤 타이밍에 가야 적절할지 헷갈리는 건 지극히 당연하죠. 시스템의 차이를 명확히 알지 못하면 불필요한 예산을 낭비하거나 모임 성격에 어긋나는 어색한 자리가 되기 십상입니다. 오늘 그 복잡한 노선도를 단번에 정리해 드릴게요."
+            </p>
+        </div>
+
+        <!-- Section 1: The Concept of Night Transit Map -->
+        <div class="section-title">
+            서울 밤의 4대 노선도 <span>Transit Map</span>
+        </div>
+        <p style="margin-bottom: 20px; color: #b0b0c5; font-size: 0.95rem;">
+            서울의 야간 업종은 크게 네 가지의 '운행 흐름'으로 요약할 수 있습니다. 각 노선은 이용 목적과 비용 구조에 따라 뚜렷한 종착지를 가집니다.
+        </p>
+
+        <div class="transit-map-container">
+            <div class="transit-header">
+                <span>LINE MAP</span>
+                <span>4 CORE STATIONS</span>
+            </div>
+            <div class="transit-grid">
+                
+                <div class="transit-node">
+                    <div class="node-line"></div>
+                    <div class="node-marker"></div>
+                    <div class="node-content">
+                        <div class="node-title">캐주얼/가성비선 <span class="node-tag">가라오케 & 펍</span></div>
+                        <div class="node-desc">오픈형 공간 혹은 대형 룸에서 친목 도모와 노래 중심의 가벼운 유흥을 지향하는 첫 단계 노선입니다.</div>
+                    </div>
+                </div>
+
+                <div class="transit-node">
+                    <div class="node-line"></div>
+                    <div class="node-marker"></div>
+                    <div class="node-content">
+                        <div class="node-title">시스템 특화선 <span class="node-tag">셔츠룸 & 레깅스룸</span></div>
+                        <div class="node-desc">명확한 유니폼 이벤트 시스템과 정형화된 프로세스를 적용해 시간 대비 직관적인 만족도를 추구하는 중급 노선입니다.</div>
+                    </div>
+                </div>
+
+                <div class="transit-node">
+                    <div class="node-line"></div>
+                    <div class="node-marker"></div>
+                    <div class="node-content">
+                        <div class="node-title">정통 비즈니스선 <span class="node-tag">퍼블릭 & 룸싸롱</span></div>
+                        <div class="node-desc">사적인 대화와 격조 있는 접대가 조화를 이루는 고전적 비즈니스 노선으로, 대화의 밀도가 높습니다.</div>
+                    </div>
+                </div>
+
+                <div class="transit-node">
+                    <div class="node-line"></div>
+                    <div class="node-marker"></div>
+                    <div class="node-content">
+                        <div class="node-title">하이엔드 프라이빗선 <span class="node-tag">텐프로 & 하이카페</span></div>
+                        <div class="node-desc">최상의 프라이버시 보호와 정제된 접객 수준을 요구하는 VIP 비즈니스 및 특별한 목적을 위한 종착역입니다.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 2: Deep Dive into 4 Axes of Comparison -->
+        <div class="section-title">
+            4대 축 정밀 비교분석 <span>Core Analysis</span>
+        </div>
+
+        <!-- Card 1: 셔츠룸 -->
+        <div class="comparison-card">
+            <div class="card-header">
+                <span>01. 셔츠룸 (시스템 특화)</span>
+                <span style="color: #000; font-size: 0.8rem; background: var(--neon-yellow); padding: 0 5px;">인기 급상승</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">주요 목적</div>
+                        <div class="meta-value">친목, 캐주얼 모임, 피로연</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">가격 수준</div>
+                        <div class="meta-value">중간 (정찰제 비중 높음)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">분위기</div>
+                        <div class="meta-value">활기차고 직관적인 시스템</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">권장 인원</div>
+                        <div class="meta-value">2인 ~ 4인 최적</div>
+                    </div>
+                </div>
+                <p class="card-text">
+                    셔츠룸은 정해진 시간 내에 특화된 유니폼(셔츠) 체인지 시스템이 적용되는 대표적인 캐주얼 업종입니다. 일반 룸싸롱 대비 정형화된 가이드와 투명한 시간당 정찰제가 정착되어 있어 예산 예측이 매우 용이하다는 강점을 가집니다. 처음 접하는 초심자들에게 진입 장벽이 가장 낮은 노선이기도 합니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2: 정통 룸싸롱 / 퍼블릭 -->
+        <div class="comparison-card">
+            <div class="card-header" style="background: var(--neon-magenta);">
+                <span style="color: #fff;">02. 정통 룸싸롱 & 퍼블릭</span>
+                <span style="color: #fff; font-size: 0.8rem; background: #000; padding: 0 5px;">비즈니스 최적</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">주요 목적</div>
+                        <div class="meta-value">비즈니스 접대, 중요 계약</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">가격 수준</div>
+                        <div class="meta-value">중상 (위스키 기준 구성)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">분위기</div>
+                        <div class="meta-value">차분하고 대화 중심의 정중함</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">권장 인원</div>
+                        <div class="meta-value">1인 ~ 3인 차분한 모임</div>
+                    </div>
+                </div>
+                <p class="card-text">
+                    단순한 시각적 이벤트를 넘어 깊이 있는 대화와 비즈니스 파트너와의 정서적 교감이 필요한 경우에 선택하는 정통 노선입니다. 주류 구성이 다양하며 접객 담당자들의 대화 매너와 서포트 수준이 높아, 무거운 이야기를 나누거나 파트너에게 예우를 갖추어야 하는 사적인 약속에 적합합니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 3: 가라오케 -->
+        <div class="comparison-card" style="border-color: var(--neon-yellow);">
+            <div class="card-header" style="background: var(--neon-yellow); color: #000;">
+                <span>03. 가라오케 & 펍</span>
+                <span style="font-size: 0.8rem; border: 1px solid #000; padding: 0 5px;">단체 모임</span>
+            </div>
+            <div class="card-body">
+                <div class="card-meta-grid">
+                    <div class="meta-item">
+                        <div class="meta-label">주요 목적</div>
+                        <div class="meta-value">생일 파티, 단체 회식 2차</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">가격 수준</div>
+                        <div class="meta-value">하 (가성비 중심)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">분위기</div>
+                        <div class="meta-value">자유로운 노래와 축제 분위기</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">권장 인원</div>
+                        <div class="meta-value">5인 이상 대형 단체</div>
+                    </div>
+                </div>
+                <p class="card-text">
+                    음악과 노래를 중심으로 직접 참여하고 즐길 수 있는 공간입니다. 룸 개수가 많고 공간이 넓어 대규모 인원을 수용하기에 최적화되어 있습니다. 주류 가격 또한 상대적으로 가볍게 책정되어 있어, 예산 부담 없이 에너지를 발산하고 웃고 떠들 수 있는 캐주얼한 모임의 끝판왕입니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 3: Right Choice Guide -->
+        <div class="section-title">
+            목적별 최적의 노선 선택 프로세스 <span>Flow Chart</span>
+        </div>
+        <p style="margin-bottom: 20px; color: #b0b0c5; font-size: 0.95rem;">
+            어떤 업종을 선택해야 할지 고민될 때는 아래의 간이 의사결정 단계를 따라가 보세요. 실패 확률을 대폭 줄일 수 있습니다.
+        </p>
+
+        <div class="flow-container">
+            <div class="flow-step">
+                <div class="step-num">01</div>
+                <div class="step-text">
+                    <h4>모임의 핵심 목적을 정의하세요</h4>
+                    <p>비즈니스 성사나 접대인지, 아니면 동료들과의 가벼운 스트레스 해소인지 명확히 구별해야 합니다.</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-num">02</div>
+                <div class="step-text">
+                    <h4>동반 인원의 규모를 확인하세요</h4>
+                    <p>소수(1~3인)의 경우 밀도 높은 대화가 가능한 룸 계열이 좋고, 다수(5인 이상)는 대형 룸이나 가라오케가 공간 효율성이 좋습니다.</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-num">03</div>
+                <div class="step-text">
+                    <h4>예산 책정 방식을 조율하세요</h4>
+                    <p>정해진 정찰제 내에서 안전하게 끝낼 것인지, 유연하게 주류 추가를 감안할 것인지 미리 조율해야 정산 시 오해가 없습니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section-title">
+            자주 묻는 질문 <span>FAQ</span>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q. 셔츠룸과 룸싸롱의 가장 큰 차이점은 무엇인가요?</div>
+            <div class="faq-a">
+                가장 큰 차이는 '시간제 시스템의 투명성'과 '복장의 통일성'입니다. 셔츠룸은 정해진 흰색 셔츠로 갈아입는 명확한 이벤트 룰이 정찰제 가격에 포함되어 움직이는 반면, 일반 룸싸롱은 더 정중한 비즈니스 복장과 맞춤형 접객 서비스를 지향하며 주류 및 시간 비용이 상대적으로 더 정교하게 책정됩니다.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q. 단체 회식의 2차 장소로는 어디가 가장 무난할까요?</div>
+            <div class="faq-a">
+                5인 이상의 단체라면 공간적 여유가 있고 노래를 편하게 부를 수 있는 대형 가라오케가 가성비 면에서 가장 무난합니다. 만약 프라이빗한 비즈니스 성격이 가미되어 있다면 퍼블릭 계열의 대형 룸을 예약하는 것을 추천합니다.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-q">Q. 예약 없이 무작정 방문해도 괜찮나요?</div>
+            <div class="faq-a">
+                서울의 주요 밤문화 상권은 예약 우선제로 운영되는 곳이 대부분입니다. 무작정 방문 시 긴 대기 시간이나 원치 않는 테이블 배정을 받을 확률이 높으므로, 미리 해당 업종의 담당자와 소통 후 방문하는 것이 가장 스마트한 방법입니다.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© NIGHT LINE. All Rights Reserved.</p>
+        <p>서울 밤문화 업종을 객관적 지표로 비교하는 정보성 블로그입니다. <br>건전하고 투명한 정보 제공을 최우선 가치로 삼습니다.</p>
+    </footer>
+</div>
+
+</body>
+</html>
