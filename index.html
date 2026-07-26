@@ -1,787 +1,619 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-night-electric">
-  
-  <title>유흥 업종 비교 — 합리적 선택을 위한 축선별 분석 가이드</title>
-  <meta name="description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
-  <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 가라오케 펍 비교, 서울 밤문화 분석">
-  <link rel="canonical" href="https://essay.go-bangbae-room.xyz/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="유흥 업종 비교 — 합리적 선택을 위한 축선별 분석 가이드">
-  <meta property="og:description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다.">
-  <meta property="og:url" content="https://essay.go-bangbae-room.xyz/">
-  <meta property="og:image" content="">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="유흥 업종 비교 — 합리적 선택을 위한 축선별 분석 가이드">
-  <meta name="twitter:description" content="서울 밤문화 업종을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다.">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://essay.go-bangbae-room.xyz/#website",
-        "url": "https://essay.go-bangbae-room.xyz",
-        "name": "유흥 업종 비교 메트로맵",
-        "description": "서울의 다양한 밤문화 업종을 노선도 메타포로 명확하게 비교 분석하는 정보 블로그"
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://essay.go-bangbae-room.xyz/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "각 업종별 가격 차이가 발생하는 가장 큰 요인은 무엇인가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "업종별 가격은 공간의 프라이빗한 정도, 제공되는 서비스의 독점성, 그리고 회원제 운영 여부에 따라 결정됩니다. 텐프로나 쩜오 같은 하이엔드 라인은 고도의 프라이빗 보안과 1:1 밀착 관리를 제공하기 때문에 가격대가 높게 형성되며, 하이퍼블릭이나 셔츠룸은 대중적인 회전율 중심 시스템으로 가격 문턱을 낮춘 것이 특징입니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "비즈니스 접대 자리에 가장 추천하는 업종 라인은 어디인가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "비즈니스 접대 목적이라면 격식과 보안이 보장되는 쩜오, 텐카페 혹은 정통 비즈니스클럽 라인을 추천합니다. 대화의 집중도가 높고 소음이 철저히 차단되는 독립 구조를 갖추고 있어, 중요한 비즈니스 대화를 나누기에 적합합니다. 캐주얼한 모임용인 하이퍼블릭이나 가라오케와는 결을 달리합니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "혼자 방문할 때 주의해야 할 점이나 권장하는 업종이 있나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "혼자 방문하시는 경우에는 단체 위주의 가라오케보다는 개인 맞춤형 케어가 가능한 셔츠룸이나 하이퍼블릭, 혹은 가벼운 대화가 가능한 펍이나 마사지 연계 공간이 적합합니다. 룸 형태의 업종은 기본 테이블 세팅 비용(기본 주류 및 안주 세트)이 고정되어 있으므로, 1인 방문 시 기본 단가를 미리 확인하시는 것이 예산 낭비를 막는 길입니다."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "ProfilePage",
-        "@id": "https://essay.go-bangbae-room.xyz/#author",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "메트로가이드 K",
-          "description": "서울의 다양한 공간과 밤문화 업종 트렌드를 5년간 정밀하게 기록하고 분석해 온 전문 데이터 가이드입니다."
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>유흥 업종 비교 — 당신에게 맞는 선택 가이드</title>
+    <meta name="description" content="서울 지역의 다양한 유흥 업종 정보를 비교 분석하여 당신에게 최적의 선택을 돕는 전문 가이드입니다. 각 업종의 특징과 고려사항을 상세히 안내합니다.">
+    <meta name="keywords" content="유흥 업종 비교, 서울 유흥, 업종 분석, 선택 가이드, 정보 블로그">
+    <link rel="canonical" href="https://essay.go-bangbae-room.xyz/">
+    <meta property="og:title" content="유흥 업종 비교 — 당신에게 맞는 선택 가이드">
+    <meta property="og:description" content="서울 지역의 다양한 유흥 업종 정보를 비교 분석하여 당신에게 최적의 선택을 돕는 전문 가이드입니다. 각 업종의 특징과 고려사항을 상세히 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://essay.go-bangbae-room.xyz/">
+    <meta property="og:site_name" content="essay.go-bangbae-room.xyz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="유흥 업종 비교 — 당신에게 맞는 선택 가이드">
+    <meta name="twitter:description" content="서울 지역의 다양한 유흥 업종 정보를 비교 분석하여 당신에게 최적의 선택을 돕는 전문 가이드입니다. 각 업종의 특징과 고려사항을 상세히 안내합니다.">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #fafaf5;
+            --accent-color: #c5a880;
+            --text-color: var(--primary-color);
+            --background-color: var(--secondary-color);
+            --border-color: rgba(26, 26, 26, 0.2);
+            --hairline-border: 1px solid var(--border-color);
+            --serif-font: 'Georgia', 'Times New Roman', serif;
+            --heading-font: 'Georgia', 'Times New Roman', serif; /* For dramatic contrast, same as body for now */
+            --letter-spacing-base: 0.05em;
+            --line-height-base: 1.8;
+            --max-width: 720px;
+            --gap: 48px;
+            --section-gap: 120px;
+            --padding-section: 72px 0;
         }
-      }
-    ]
-  }
-  </script>
-
-  <style>
-    /* Design System: Brutalist Avant-Garde / Night Transit Map */
-    :root {
-      --primary-bg: #07070e;
-      --secondary-bg: #121224;
-      --text-main: #f2f2ff;
-      --text-muted: #8a8a9e;
-      --accent-orange: #ff5c1a;
-      --accent-teal: #00c8a0;
-      --accent-violet: #7c3aed;
-      --grid-line: rgba(242, 242, 255, 0.04);
-      --border-fine: rgba(242, 242, 255, 0.12);
-      --font-headline: 'Barlow Condensed', sans-serif;
-      --font-body: 'Noto Sans KR', sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--primary-bg);
-      color: var(--text-main);
-      font-family: var(--font-body);
-      line-height: 1.6;
-      overflow-x: hidden;
-      /* Fixed CSS Grid Background (graph-paper pattern) */
-      background-image: 
-        linear-gradient(var(--grid-line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-
-    /* Container */
-    .m-list-0qe2 {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 48px;
-    }
-
-    @media (max-width: 768px) {
-      .m-list-0qe2 {
-        padding: 0 24px;
-      }
-    }
-
-    /* Header */
-    .k-img-jnt8 {
-      border-bottom: 1px solid var(--border-fine);
-      position: sticky;
-      top: 0;
-      background: rgba(7, 7, 14, 0.9);
-      backdrop-filter: blur(8px);
-      z-index: 100;
-    }
-
-    .t-top-w8gl-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 80px;
-    }
-
-    .k-item-lftm {
-      font-family: var(--font-headline);
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.03em;
-      text-decoration: none;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .k-item-lftm span {
-      background: var(--accent-orange);
-      color: var(--primary-bg);
-      padding: 2px 6px;
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-
-    /* Nav Links */
-    .t-top-w8gl-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-      align-items: center;
-    }
-
-    .t-top-w8gl-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
-      text-transform: uppercase;
-      font-family: var(--font-headline);
-      letter-spacing: 0.05em;
-    }
-
-    .t-top-w8gl-links a:hover {
-      color: var(--accent-orange);
-    }
-
-    /* Burger Menu */
-    .m-ico-zykn-input {
-      display: none;
-    }
-
-    .m-ico-zykn-label {
-      display: none;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 6px;
-      z-index: 110;
-    }
-
-    .m-ico-zykn-label span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background-color: var(--text-main);
-      transition: 0.3s;
-    }
-
-    @media (max-width: 768px) {
-      .m-ico-zykn-label {
-        display: flex;
-      }
-
-      .t-top-w8gl-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: var(--primary-bg);
-        flex-direction: column;
-        padding: 48px;
-        gap: 32px;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-        border-top: 1px solid var(--border-fine);
-      }
-
-      .m-ico-zykn-input:checked ~ .t-top-w8gl-links {
-        transform: translateX(0);
-      }
-
-      .m-ico-zykn-input:checked ~ .m-ico-zykn-label span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      .m-ico-zykn-input:checked ~ .m-ico-zykn-label span:nth-child(2) {
-        opacity: 0;
-      }
-      .m-ico-zykn-input:checked ~ .m-ico-zykn-label span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-    }
-
-    /* Hero Section: Asymmetric 1.4fr / 1fr Split */
-    .v-body-ffg3-section {
-      padding: 80px 0;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .v-body-ffg3-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-
-    @media (max-width: 992px) {
-      .v-body-ffg3-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-    }
-
-    .v-body-ffg3-left {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    .q-main-8o12-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-headline);
-      font-size: 0.9rem;
-      letter-spacing: 0.1em;
-      color: var(--accent-orange);
-      border: 1px solid var(--accent-orange);
-      padding: 4px 12px;
-      width: fit-content;
-      text-transform: uppercase;
-    }
-
-    .q-main-8o12-badge span {
-      width: 8px;
-      height: 8px;
-      background-color: var(--accent-orange);
-      display: inline-block;
-    }
-
-    .v-body-ffg3-title {
-      font-family: var(--font-headline);
-      font-size: clamp(3rem, 6vw, 4.5rem);
-      font-weight: 900;
-      line-height: 0.95;
-      text-transform: uppercase;
-      letter-spacing: -0.03em;
-    }
-
-    .v-body-ffg3-title span {
-      color: var(--accent-orange);
-    }
-
-    .v-body-ffg3-description {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 600px;
-    }
-
-    .v-body-ffg3-description strong {
-      color: var(--text-main);
-    }
-
-    /* Hero Right: Route Visual Metaphor (Interactive Map Style) */
-    .v-body-ffg3-right {
-      background: var(--secondary-bg);
-      border: 1px solid var(--border-fine);
-      padding: 32px;
-      position: relative;
-    }
-
-    .x-list-vqwj-header {
-      border-bottom: 1px solid var(--border-fine);
-      padding-bottom: 16px;
-      margin-bottom: 24px;
-    }
-
-    .x-list-vqwj-title {
-      font-family: var(--font-headline);
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-main);
-    }
-
-    .x-list-vqwj-subtitle {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .v-box-2erd-lines {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .v-box-2erd-line {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .k-btn-i8vg-indicator {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      position: relative;
-    }
-
-    .k-btn-i8vg-indicator::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 6px;
-      height: 6px;
-      background: var(--primary-bg);
-      border-radius: 50%;
-    }
-
-    .k-btn-i8vg-indicator.orange { background-color: var(--accent-orange); }
-    .k-btn-i8vg-indicator.teal { background-color: var(--accent-teal); }
-    .k-btn-i8vg-indicator.violet { background-color: var(--accent-violet); }
-
-    .k-btn-i8vg-info {
-      flex-grow: 1;
-    }
-
-    .k-btn-i8vg-name {
-      font-family: var(--font-headline);
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-    }
-
-    .k-btn-i8vg-stops {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    /* Section 1: 4-Column Data Grid (Comparison Axes) */
-    .r-item-b4yq-axes {
-      padding: 80px 0;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .r-item-b4yq-header {
-      margin-bottom: 48px;
-    }
-
-    .r-item-b4yq-label {
-      font-family: var(--font-headline);
-      font-size: 0.9rem;
-      color: var(--accent-orange);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .r-item-b4yq-title {
-      font-family: var(--font-headline);
-      font-size: 2.5rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: -0.02em;
-    }
-
-    .q-side-t0ax-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
-    }
-
-    @media (max-width: 992px) {
-      .q-side-t0ax-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .q-side-t0ax-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .t-side-zxvm-card {
-      border: 1px solid var(--border-fine);
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      transition: border-color 0.2s;
-    }
-
-    .t-side-zxvm-card:hover {
-      border-color: var(--accent-orange);
-    }
-
-    .t-side-zxvm-num {
-      font-family: var(--font-headline);
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: rgba(242, 242, 255, 0.1);
-      line-height: 1;
-    }
-
-    .t-side-zxvm-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .t-side-zxvm-desc {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    /* Section 2: Metro-Stop Timeline (Absolute Line + Dots) */
-    .r-item-b4yq-timeline {
-      padding: 80px 0;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .r-side-jv3t-container {
-      position: relative;
-      margin-top: 48px;
-      padding-left: 40px;
-    }
-
-    .r-side-jv3t-line {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 19px;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--accent-teal), var(--accent-orange), var(--accent-violet));
-    }
-
-    .r-side-jv3t-item {
-      position: relative;
-      margin-bottom: 64px;
-    }
-
-    .r-side-jv3t-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .r-side-jv3t-dot {
-      position: absolute;
-      left: -31px;
-      top: 6px;
-      width: 24px;
-      height: 24px;
-      background: var(--primary-bg);
-      border: 3px solid var(--accent-orange);
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    .r-side-jv3t-item:nth-child(2) .r-side-jv3t-dot { border-color: var(--accent-teal); }
-    .r-side-jv3t-item:nth-child(3) .r-side-jv3t-dot { border-color: var(--accent-violet); }
-
-    .r-side-jv3t-content {
-      background: var(--secondary-bg);
-      border: 1px solid var(--border-fine);
-      padding: 32px;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 32px;
-    }
-
-    @media (max-width: 768px) {
-      .r-side-jv3t-content {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-    }
-
-    .r-side-jv3t-left h3 {
-      font-family: var(--font-headline);
-      font-size: 1.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .r-side-jv3t-badge {
-      display: inline-block;
-      background: rgba(242, 242, 255, 0.05);
-      padding: 2px 8px;
-      font-size: 0.8rem;
-      font-family: var(--font-headline);
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-    }
-
-    .r-side-jv3t-right {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .r-side-jv3t-right p {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-
-    .r-side-jv3t-specs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      border-top: 1px solid var(--border-fine);
-      padding-top: 16px;
-      margin-top: 8px;
-    }
-
-    .q-btn-noh0-item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .q-btn-noh0-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .q-btn-noh0-value {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    /* Section 3: Articles & Deep Analysis (Asymmetric 1.4fr / 1fr Split) */
-    .r-item-b4yq-articles {
-      padding: 80px 0;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .k-grid-5ojy-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 48px;
-    }
-
-    @media (max-width: 992px) {
-      .k-grid-5ojy-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .t-hero-4plr-main {
-      border: 1px solid var(--border-fine);
-      padding: 48px;
-      background: var(--secondary-bg);
-    }
-
-    @media (max-width: 576px) {
-      .t-hero-4plr-main {
-        padding: 24px;
-      }
-    }
-
-    .t-hero-4plr-meta {
-      font-family: var(--font-headline);
-      color: var(--accent-orange);
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-      margin-bottom: 16px;
-    }
-
-    .t-hero-4plr-title {
-      font-size: 2rem;
-      font-weight: 800;
-      line-height: 1.3;
-      margin-bottom: 24px;
-    }
-
-    .t-hero-4plr-body {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      font-size: 1rem;
-      color: var(--text-muted);
-    }
-
-    .t-hero-4plr-body p strong {
-      color: var(--text-main);
-    }
-
-    .t-hero-4plr-callout {
-      border-left: 3px solid var(--accent-orange);
-      padding-left: 20px;
-      margin: 20px 0;
-      font-style: italic;
-      color: var(--text-main);
-    }
-
-    /* Article Sidebar (Checklist / Utility) */
-    .t-hero-4plr-sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .q-ico-adt7-card {
-      border: 1px solid var(--border-fine);
-      padding: 32px;
-    }
-
-    .q-ico-adt7-title {
-      font-family: var(--font-headline);
-      font-size: 1.3rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .k-top-vssc {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .k-top-vssc-item {
-      display: flex;
-      gap: 12px;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    .k-top-vssc-item::before {
-      content: "▪";
-      color: var(--accent-orange);
-      font-weight: bold;
-    }
-
-    .k-top-vssc-item strong {
-      color: var(--text-main);
-    }
-
-    /* Section 4: FAQ Section (Accordion style / minimal grid) */
-    .r-item-b4yq-faq {
-      padding: 80px 0;
-      border-bottom: 1px solid var(--border-fine);
-    }
-
-    .q-btn-abnk-list {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      margin-top: 48px;
-    }
-
-    .q-btn-abnk-item {
-      border: 1px solid var(--border-fine);
-      padding: 32px;
-      background: var(--secondary-bg);
-    }
-
-    .q-btn-abnk-question {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 12px;
-      display: flex;
-      gap: 12px;
-    }
-
-    .q-btn-abnk-question::before {
-      content: "Q.";
-      color: var(--accent-orange);
-      font-family: var(--font-headline);
-      font-weight: 900;
-    }
-
-    .q-btn-abnk-answer {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-      padding-left: 24px;
-    }
-
-    /* Section 5: Author Bio / E-A-T Block */
-    .r-item-b4yq-author {
-      padding: 80px 0;
-    }
-
-    .v-btn-xl6l-box {
-      border: 1px solid var(--border-fine);
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 32px;
-      align-items: center;
-      background: rgba(242, 242, 255, 0.02);
-    }
-
-    @media (max-width: 576px) {
-      .v-btn-xl6l-box {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        text-align: center;
-      }
-    }
-
-    .v-btn-xl6l-avatar {
-      width: 80px;
-      height: 80px;
-      background: var(--accent-orange);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-headline);
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--primary-bg);
-      margin: 0 auto;
-    }
 
-    .random-class-
+        body {
+            margin: 0;
+            font-family: var(--serif-font);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            letter-spacing: var(--letter-spacing-base);
+            line-height: var(--line-height-base);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            margin-bottom: var(--gap);
+            font-weight: normal;
+        }
+
+        h1 { font-size: 3.5em; line-height: 1.2; }
+        h2 { font-size: 2.5em; line-height: 1.2; }
+        h3 { font-size: 1.8em; line-height: 1.3; }
+
+        p {
+            margin-top: 0;
+            margin-bottom: var(--gap);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: var(--hairline-border);
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--gap); /* Horizontal padding for content */
+        }
+
+        header {
+            padding: var(--gap) 0;
+            text-align: center;
+            border-bottom: var(--hairline-border);
+        }
+
+        header h1 {
+            margin-bottom: 0;
+            font-size: 2em;
+            letter-spacing: -0.02em; /* Tighter for title */
+        }
+
+        nav {
+            text-align: center;
+            padding: var(--gap) 0;
+            border-bottom: var(--hairline-border);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: var(--gap);
+        }
+
+        nav a {
+            border-bottom: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.08em;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+            border-bottom: var(--hairline-border);
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: var(--secondary-color);
+            margin-bottom: var(--section-gap);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.5));
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            color: var(--secondary-color);
+            margin-bottom: 0;
+            letter-spacing: -0.03em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: rgba(250, 250, 245, 0.9);
+            max-width: 600px;
+            margin: var(--gap) auto 0 auto;
+        }
+
+        main {
+            padding: var(--padding-section);
+        }
+
+        section {
+            margin-bottom: var(--section-gap);
+            padding: var(--padding-section);
+            border-bottom: var(--hairline-border);
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--section-gap);
+            font-size: 2.5em;
+            letter-spacing: -0.02em;
+        }
+
+        .blog-post-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--gap);
+        }
+
+        .blog-post-item {
+            padding: var(--gap);
+            border: var(--hairline-border);
+            background-color: var(--secondary-color);
+        }
+
+        .blog-post-item h3 {
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: calc(var(--gap) / 2);
+            letter-spacing: -0.01em;
+        }
+
+        .blog-post-item p {
+            font-size: 0.95em;
+            color: rgba(26, 26, 26, 0.8);
+        }
+
+        .blog-post-item a {
+            display: inline-block;
+            margin-top: calc(var(--gap) / 2);
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        .blog-post-item a:hover {
+            color: var(--primary-color);
+            border-bottom: var(--hairline-border);
+        }
+
+        .selection-criteria, .pre-visit-checks, .condition-suitability {
+            margin-top: var(--gap);
+        }
+
+        .selection-criteria h3, .pre-visit-checks h3, .condition-suitability h3 {
+            font-size: 1.8em;
+            margin-bottom: var(--gap);
+            letter-spacing: -0.01em;
+        }
+
+        .selection-criteria ul, .pre-visit-checks ul, .condition-suitability ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .selection-criteria li, .pre-visit-checks li, .condition-suitability li {
+            margin-bottom: var(--gap);
+            padding-bottom: var(--gap);
+            border-bottom: var(--hairline-border);
+        }
+
+        .selection-criteria li:last-child, .pre-visit-checks li:last-child, .condition-suitability li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .selection-criteria h4, .pre-visit-checks h4, .condition-suitability h4 {
+            font-size: 1.3em;
+            margin-bottom: calc(var(--gap) / 2);
+            letter-spacing: -0.005em;
+        }
+
+        .drop-cap {
+            float: left;
+            font-size: 4em;
+            line-height: 0.8;
+            margin-right: 0.1em;
+            padding-top: 0.1em;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        blockquote {
+            font-size: 1.2em;
+            font-style: italic;
+            margin: var(--gap) auto;
+            padding: var(--gap) 0;
+            border-top: var(--hairline-border);
+            border-bottom: var(--hairline-border);
+            text-align: center;
+            max-width: 600px;
+            color: rgba(26, 26, 26, 0.7);
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+        }
+
+        .quote-caption {
+            display: block;
+            margin-top: calc(var(--gap) / 2);
+            font-size: 0.9em;
+            color: rgba(26, 26, 26, 0.6);
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .author-bio {
+            margin-top: var(--gap);
+            padding: var(--gap);
+            border: var(--hairline-border);
+            background-color: var(--secondary-color);
+            font-size: 0.9em;
+            color: rgba(26, 26, 26, 0.8);
+        }
+
+        .author-bio strong {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: var(--gap) 0;
+            margin-top: var(--section-gap);
+            border-top: var(--hairline-border);
+            font-size: 0.8em;
+            color: rgba(26, 26, 26, 0.5);
+        }
+
+        /* Mobile Menu */
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: var(--primary-color);
+            padding: var(--gap);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            border-top: var(--hairline-border);
+            padding: var(--gap) 0;
+            z-index: 10;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .mobile-menu li {
+            margin-bottom: var(--gap);
+        }
+
+        .mobile-menu a {
+            font-size: 1.1em;
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8em; }
+            h2 { font-size: 2em; }
+            h3 { font-size: 1.5em; }
+
+            .hero h1 { font-size: 3em; }
+            .hero p { font-size: 1em; }
+
+            .container {
+                padding: 0 var(--gap);
+            }
+
+            section {
+                padding: var(--padding-section);
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none; /* Hide desktop nav */
+            }
+
+            .hero {
+                height: 50vh;
+            }
+
+            .drop-cap {
+                font-size: 3em;
+            }
+
+            blockquote {
+                font-size: 1.1em;
+                padding: var(--gap) 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2em; }
+            .hero h1 { font-size: 2.5em; }
+            .hero { height: 40vh; }
+            .section-title { font-size: 1.8em; }
+            .blog-post-item h3 { font-size: 1.5em; }
+            .selection-criteria h3, .pre-visit-checks h3, .condition-suitability h3 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="mobile-nav-toggle" aria-label="메뉴 열기">☰</button>
+            <h1>유흥 업종 비교</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">최신 글</a></li>
+                <li><a href="#">카테고리</a></li>
+                <li><a href="#">검색</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#">최신 글</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">검색</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>당신의 선택, 명확한 기준이 필요하다</h1>
+            <p>서울의 복잡한 유흥 업종 속에서 길을 잃지 않도록, 핵심 정보를 날카롭게 분석합니다. 피상적인 정보에 기댈 때가 아닙니다.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">최신 분석 보고서</h2>
+            <div class="blog-post-list">
+                <article class="blog-post-item">
+                    <h3>고급 바 vs. 라이브 바: 분위기와 예산에 따른 현명한 선택</h3>
+                    <p>각기 다른 매력을 지닌 두 공간. 당신의 밤을 더욱 풍요롭게 만들 선택은 무엇인가? 심층 비교 분석.</p>
+                    <a href="#">자세히 읽기</a>
+                </article>
+                <article class="blog-post-item">
+                    <h3>라운지 클럽의 진화: 단순한 음악 공간을 넘어</h3>
+                    <p>최신 트렌드를 반영한 라운지 클럽의 변화와 함께, 그 안에서 경험할 수 있는 다채로운 가치를 탐구합니다.</p>
+                    <a href="#">자세히 읽기</a>
+                </article>
+                <article class="blog-post-item">
+                    <h3>프라이빗 룸: 숨겨진 공간의 은밀한 매력 해부</h3>
+                    <p>특별한 날, 혹은 조용한 대화를 위한 선택. 프라이빗 룸의 장점과 고려해야 할 사항들을 짚어봅니다.</p>
+                    <a href="#">자세히 읽기</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">이용 전 반드시 확인하세요</h2>
+            <div class="pre-visit-checks">
+                <ul>
+                    <li>
+                        <h4>업종별 필수 체크리스트</h4>
+                        <p>선택하려는 업종의 기본적인 운영 방식, 서비스 범위, 그리고 반드시 숙지해야 할 에티켓을 미리 파악하십시오. 정보의 비대칭은 당신의 경험을 저해할 뿐입니다.</p>
+                    </li>
+                    <li>
+                        <h4>예산 설정과 관리</h4>
+                        <p>업종별 평균 비용과 예상치 못한 추가 지출 가능성을 고려하여 현실적인 예산을 계획해야 합니다. 과도한 지출은 다음 기회를 놓치게 만듭니다.</p>
+                    </li>
+                    <li>
+                        <h4>시간 활용 전략</h4>
+                        <p>각 업종이 제공하는 최적의 경험 시간대를 이해하고, 당신의 방문 목적과 스케줄에 맞춰 효율적으로 시간을 배분하는 것이 중요합니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">상황별 최적의 선택</h2>
+            <div class="condition-suitability">
+                <ul>
+                    <li>
+                        <h4>조용한 대화와 분위기를 원할 때</h4>
+                        <p>소규모 고급 바나 프라이빗 룸이 적합합니다. 잔잔한 음악과 세심한 서비스는 깊이 있는 대화를 가능하게 합니다.</p>
+                    </li>
+                    <li>
+                        <h4>활기찬 에너지를 느끼고 싶을 때</h4>
+                        <p>트렌디한 라운지 클럽이나 특정 라이브 공연이 있는 업종을 고려해볼 수 있습니다. 분위기를 즐기며 스트레스를 해소하는 데 집중하세요.</p>
+                    </li>
+                    <li>
+                        <h4>특별한 경험을 추구할 때</h4>
+                        <p>기존의 틀을 벗어난 컨셉의 업종이나, 특정 테마를 가진 공간을 탐색해 보십시오. 예상치 못한 만족감을 선사할 수 있습니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">자주 묻는 질문</h2>
+            <div class="faq-section">
+                <article>
+                    <h3>가장 기본적인 유흥 업종은 무엇인가요?</h3>
+                    <p>가장 기본적인 형태는 목적에 따라 바, 클럽, 또는 특정 엔터테인먼트 시설을 포함할 수 있습니다. 각 업종마다 고유한 특징과 분위기를 가지고 있습니다.</p>
+                </article>
+                <article>
+                    <h3>비용은 어느 정도를 예상해야 하나요?</h3>
+                    <p>업종, 시간대, 제공되는 서비스에 따라 비용은 천차만별입니다. 일반적으로 고급 시설일수록, 특별한 서비스를 제공할수록 비용이 높아지는 경향이 있습니다.</p>
+                </article>
+                <article>
+                    <h3>처음 방문 시 주의할 점이 있나요?</h3>
+                    <p>방문 전 해당 업종의 에티켓과 기본적인 이용 수칙을 숙지하는 것이 좋습니다. 또한, 예상치 못한 추가 비용 발생 가능성에 대비하여 합리적인 예산을 계획하십시오.</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="author-bio">
+            <strong>작성자:</strong> 로컬 인사이트 큐레이터 | 서울 지역의 다양한 업종에 대한 경험을 바탕으로, 정보의 홍수 속에서 길을 잃지 않도록 돕는 가이드입니다.
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 essay.go-bangbae-room.xyz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileNavToggle.addEventListener('click', () => {
+            const isExpanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
+            mobileNavToggle.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.style.display = isExpanded ? 'none' : 'block';
+        });
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "essay.go-bangbae-room.xyz",
+      "url": "https://essay.go-bangbae-room.xyz/",
+      "about": {
+        "@type": "Thing",
+        "name": "유흥 업종 비교"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "essay.go-bangbae-room.xyz",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/150"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "로컬 인사이트 큐레이터",
+        "description": "서울 지역의 다양한 업종에 대한 경험을 바탕으로, 정보의 홍수 속에서 길을 잃지 않도록 돕는 가이드입니다."
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://essay.go-bangbae-room.xyz/"
+      },
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "name": "최신 분석 보고서",
+          "url": "https://essay.go-bangbae-room.xyz/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "이용 전 반드시 확인하세요",
+          "url": "https://essay.go-bangbae-room.xyz/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "상황별 최적의 선택",
+          "url": "https://essay.go-bangbae-room.xyz/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "가장 기본적인 유흥 업종은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가장 기본적인 형태는 목적에 따라 바, 클럽, 또는 특정 엔터테인먼트 시설을 포함할 수 있습니다. 각 업종마다 고유한 특징과 분위기를 가지고 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "비용은 어느 정도를 예상해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업종, 시간대, 제공되는 서비스에 따라 비용은 천차만별입니다. 일반적으로 고급 시설일수록, 특별한 서비스를 제공할수록 비용이 높아지는 경향이 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "처음 방문 시 주의할 점이 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "방문 전 해당 업종의 에티켓과 기본적인 이용 수칙을 숙지하는 것이 좋습니다. 또한, 예상치 못한 추가 비용 발생 가능성에 대비하여 합리적인 예산을 계획하십시오."
+          }
+        }
+      ]
+    }
+    </script>
 </body>
 </html>
