@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://essay.go-bangbae-room.xyz/sitemap.xml
+Sitemap: https://essay.go-bangbae-room.xyz/sitemap-pages.xml
