@@ -1,634 +1,632 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-night-electric">
-    <title>유흥 업종 비교 — 서울 밤의 노선도 및 대안 분석 가이드</title>
-    <meta name="description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
-    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 가라오케 펍 비교, 서울 밤문화 분석">
-    <link rel="canonical" href="https://essay.go-bangbae-room.xyz/blog-2.html">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="유흥 업종 비교 — 서울 밤의 노선도 및 대안 분석 가이드">
-    <meta property="og:description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
-    <meta property="og:url" content="https://essay.go-bangbae-room.xyz/blog-2.html">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>유흥 업종 비교 — 서울 밤의 노선도 및 대안 분석 가이드</title>
+ <meta name="description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
+ <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 가라오케 펍 비교, 서울 밤문화 분석">
+ <link rel="canonical" href="https://essay.go-bangbae-room.xyz/blog-2.html">
+ 
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="유흥 업종 비교 — 서울 밤의 노선도 및 대안 분석 가이드">
+ <meta property="og:description" content="서울 밤문화 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)을 가격·분위기·인원·목적이라는 4대 축으로 정밀 비교하는 정보 블로그입니다. 투명한 데이터와 노선도를 제공합니다.">
+ <meta property="og:url" content="https://essay.go-bangbae-room.xyz/blog-2.html">
 
-    <style>
-        /* RESET & BASE VARIABLES (kr-night-electric + brutalist-avantgarde) */
-        :root {
-            --bg-color: #08090f;
-            --text-color: #ffffff;
-            --accent-pink: #ff0055;
-            --accent-cyan: #00ffcc;
-            --accent-yellow: #ffff00;
-            --dark-gray: #1a1c24;
-            --light-gray: #a0a5b5;
-            --border-width: 3px;
-            --brutalist-shadow: 5px 5px 0px var(--accent-cyan);
-            --brutalist-shadow-pink: 5px 5px 0px var(--accent-pink);
-        }
+ <style>
+ /* RESET & BASE VARIABLES (kr-night-electric + brutalist-avantgarde) */
+ :root {
+ --bg-color: #08090f;
+ --text-color: #ffffff;
+ --accent-pink: #ff0055;
+ --accent-cyan: #00ffcc;
+ --accent-yellow: #ffff00;
+ --dark-gray: #1a1c24;
+ --light-gray: #a0a5b5;
+ --border-width: 3px;
+ --brutalist-shadow: 5px 5px 0px var(--accent-cyan);
+ --brutalist-shadow-pink: 5px 5px 0px var(--accent-pink);
+ }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-        }
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+ }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 0;
-            margin: 0;
-        }
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ line-height: 1.6;
+ padding: 0;
+ margin: 0;
+ }
 
-        /* RESPONSIVE-768 PATTERN */
-        .container {
-            max-width: 768px;
-            margin: 0 auto;
-            padding: 20px;
-            border-left: var(--border-width) solid var(--text-color);
-            border-right: var(--border-width) solid var(--text-color);
-            background-color: #0c0d14;
-            min-height: 100vh;
-        }
+ /* RESPONSIVE-768 PATTERN */
+ .container {
+ max-width: 768px;
+ margin: 0 auto;
+ padding: 20px;
+ border-left: var(--border-width) solid var(--text-color);
+ border-right: var(--border-width) solid var(--text-color);
+ background-color: #0c0d14;
+ min-height: 100vh;
+ }
 
-        /* HEADER & NAVIGATION */
-        header {
-            border-bottom: var(--border-width) solid var(--text-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
+ /* HEADER & NAVIGATION */
+ header {
+ border-bottom: var(--border-width) solid var(--text-color);
+ padding-bottom: 20px;
+ margin-bottom: 30px;
+ }
 
-        .logo-area {
-            background-color: var(--accent-pink);
-            color: #000;
-            padding: 15px;
-            font-size: 1.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            border: var(--border-width) solid var(--text-color);
-            box-shadow: var(--brutalist-shadow);
-            margin-bottom: 20px;
-            display: inline-block;
-        }
+ .logo-area {
+ background-color: var(--accent-pink);
+ color: #000;
+ padding: 15px;
+ font-size: 1.8rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ border: var(--border-width) solid var(--text-color);
+ box-shadow: var(--brutalist-shadow);
+ margin-bottom: 20px;
+ display: inline-block;
+ }
 
-        nav {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+ nav {
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+ }
 
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            padding: 8px 12px;
-            border: var(--border-width) solid var(--text-color);
-            background-color: var(--dark-gray);
-            transition: all 0.2s ease;
-        }
+ nav a {
+ color: var(--text-color);
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 0.9rem;
+ padding: 8px 12px;
+ border: var(--border-width) solid var(--text-color);
+ background-color: var(--dark-gray);
+ transition: all 0.2s ease;
+ }
 
-        nav a:hover, nav a.active {
-            background-color: var(--accent-cyan);
-            color: #000;
-            box-shadow: 3px 3px 0px var(--accent-pink);
-            transform: translate(-2px, -2px);
-        }
+ nav a:hover, nav a.active {
+ background-color: var(--accent-cyan);
+ color: #000;
+ box-shadow: 3px 3px 0px var(--accent-pink);
+ transform: translate(-2px, -2px);
+ }
 
-        /* HERO SECTION */
-        .hero {
-            border: var(--border-width) solid var(--text-color);
-            background: linear-gradient(135deg, #12131a 0%, #1c1e29 100%);
-            padding: 30px 20px;
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-        }
+ /* HERO SECTION */
+ .hero {
+ border: var(--border-width) solid var(--text-color);
+ background: linear-gradient(135deg, #12131a 0%, #1c1e29 100%);
+ padding: 30px 20px;
+ margin-bottom: 40px;
+ position: relative;
+ overflow: hidden;
+ }
 
-        .hero::before {
-            content: "NIGHT TRANSIT";
-            position: absolute;
-            bottom: -10px;
-            right: -10px;
-            font-size: 4rem;
-            font-weight: 900;
-            color: rgba(255, 255, 255, 0.03);
-            letter-spacing: -2px;
-            pointer-events: none;
-        }
+ .hero::before {
+ content: "NIGHT TRANSIT";
+ position: absolute;
+ bottom: -10px;
+ right: -10px;
+ font-size: 4rem;
+ font-weight: 900;
+ color: rgba(255, 255, 255, 0.03);
+ letter-spacing: -2px;
+ pointer-events: none;
+ }
 
-        .hero h1 {
-            font-size: 2.2rem;
-            font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 15px;
-            color: var(--accent-yellow);
-            text-transform: uppercase;
-        }
+ .hero h1 {
+ font-size: 2.2rem;
+ font-weight: 900;
+ line-height: 1.2;
+ margin-bottom: 15px;
+ color: var(--accent-yellow);
+ text-transform: uppercase;
+ }
 
-        .hero p {
-            font-size: 1.05rem;
-            color: var(--light-gray);
-            margin-bottom: 15px;
-        }
+ .hero p {
+ font-size: 1.05rem;
+ color: var(--light-gray);
+ margin-bottom: 15px;
+ }
 
-        .badge {
-            background-color: var(--accent-cyan);
-            color: #000;
-            font-weight: 800;
-            padding: 4px 8px;
-            font-size: 0.8rem;
-            display: inline-block;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
+ .badge {
+ background-color: var(--accent-cyan);
+ color: #000;
+ font-weight: 800;
+ padding: 4px 8px;
+ font-size: 0.8rem;
+ display: inline-block;
+ margin-bottom: 10px;
+ text-transform: uppercase;
+ }
 
-        /* PERSONAL ANECDOTE AREA */
-        .anecdote-box {
-            background-color: var(--dark-gray);
-            border-left: 5px solid var(--accent-pink);
-            padding: 15px;
-            margin-bottom: 35px;
-            font-style: normal;
-        }
+ /* PERSONAL ANECDOTE AREA */
+ .anecdote-box {
+ background-color: var(--dark-gray);
+ border-left: 5px solid var(--accent-pink);
+ padding: 15px;
+ margin-bottom: 35px;
+ font-style: normal;
+ }
 
-        .anecdote-box p {
-            font-size: 0.95rem;
-            color: #e0e0e0;
-            margin-bottom: 8px;
-        }
+ .anecdote-box p {
+ font-size: 0.95rem;
+ color: #e0e0e0;
+ margin-bottom: 8px;
+ }
 
-        .anecdote-box p:last-child {
-            margin-bottom: 0;
-        }
+ .anecdote-box p:last-child {
+ margin-bottom: 0;
+ }
 
-        /* TRANSIT MAP / GRID SYSTEM */
-        .section-title {
-            font-size: 1.6rem;
-            font-weight: 900;
-            border-bottom: 3px double var(--accent-cyan);
-            padding-bottom: 8px;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+ /* TRANSIT MAP / GRID SYSTEM */
+ .section-title {
+ font-size: 1.6rem;
+ font-weight: 900;
+ border-bottom: 3px double var(--accent-cyan);
+ padding-bottom: 8px;
+ margin-bottom: 25px;
+ text-transform: uppercase;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
 
-        .section-title span {
-            color: var(--accent-pink);
-        }
+ .section-title span {
+ color: var(--accent-pink);
+ }
 
-        /* METAPHOR: TRANSIT LINE CARDS */
-        .line-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
+ /* METAPHOR: TRANSIT LINE CARDS */
+ .line-container {
+ display: flex;
+ flex-direction: column;
+ gap: 25px;
+ margin-bottom: 40px;
+ }
 
-        .line-card {
-            border: var(--border-width) solid var(--text-color);
-            background-color: #12131a;
-            padding: 20px;
-            position: relative;
-            box-shadow: var(--brutalist-shadow);
-        }
+ .line-card {
+ border: var(--border-width) solid var(--text-color);
+ background-color: #12131a;
+ padding: 20px;
+ position: relative;
+ box-shadow: var(--brutalist-shadow);
+ }
 
-        .line-card.pink {
-            box-shadow: var(--brutalist-shadow-pink);
-        }
+ .line-card.pink {
+ box-shadow: var(--brutalist-shadow-pink);
+ }
 
-        .line-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--light-gray);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
+ .line-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 1px solid var(--light-gray);
+ padding-bottom: 10px;
+ margin-bottom: 15px;
+ }
 
-        .line-name {
-            font-size: 1.2rem;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+ .line-name {
+ font-size: 1.2rem;
+ font-weight: 800;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
 
-        .line-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            display: inline-block;
-        }
+ .line-dot {
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ display: inline-block;
+ }
 
-        .dot-cyan { background-color: var(--accent-cyan); }
-        .dot-pink { background-color: var(--accent-pink); }
-        .dot-yellow { background-color: var(--accent-yellow); }
+ .dot-cyan { background-color: var(--accent-cyan); }
+ .dot-pink { background-color: var(--accent-pink); }
+ .dot-yellow { background-color: var(--accent-yellow); }
 
-        .line-meta {
-            font-size: 0.8rem;
-            color: var(--light-gray);
-            font-weight: 600;
-        }
+ .line-meta {
+ font-size: 0.8rem;
+ color: var(--light-gray);
+ font-weight: 600;
+ }
 
-        .line-body p {
-            font-size: 0.95rem;
-            margin-bottom: 12px;
-            color: #e2e8f0;
-        }
+ .line-body p {
+ font-size: 0.95rem;
+ margin-bottom: 12px;
+ color: #e2e8f0;
+ }
 
-        .line-tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
+ .line-tags {
+ display: flex;
+ gap: 8px;
+ flex-wrap: wrap;
+ }
 
-        .tag {
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 3px 6px;
-            background-color: #222533;
-            border: 1px solid var(--light-gray);
-        }
+ .tag {
+ font-size: 0.75rem;
+ font-weight: 700;
+ padding: 3px 6px;
+ background-color: #222533;
+ border: 1px solid var(--light-gray);
+ }
 
-        /* BRUTALIST COMPARISON TABLE */
-        .table-responsive {
-            overflow-x: auto;
-            margin-bottom: 40px;
-            border: var(--border-width) solid var(--text-color);
-        }
+ /* BRUTALIST COMPARISON TABLE */
+ .table-responsive {
+ overflow-x: auto;
+ margin-bottom: 40px;
+ border: var(--border-width) solid var(--text-color);
+ }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            font-size: 0.9rem;
-            background-color: #0c0d14;
-        }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 0.9rem;
+ background-color: #0c0d14;
+ }
 
-        th, td {
-            padding: 12px 15px;
-            border-bottom: 1px solid var(--dark-gray);
-            border-right: 1px solid var(--dark-gray);
-        }
+ th, td {
+ padding: 12px 15px;
+ border-bottom: 1px solid var(--dark-gray);
+ border-right: 1px solid var(--dark-gray);
+ }
 
-        th {
-            background-color: var(--dark-gray);
-            color: var(--accent-yellow);
-            font-weight: 800;
-            text-transform: uppercase;
-        }
+ th {
+ background-color: var(--dark-gray);
+ color: var(--accent-yellow);
+ font-weight: 800;
+ text-transform: uppercase;
+ }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+ tr:last-child td {
+ border-bottom: none;
+ }
 
-        td.highlight {
-            color: var(--accent-cyan);
-            font-weight: 700;
-        }
+ td.highlight {
+ color: var(--accent-cyan);
+ font-weight: 700;
+ }
 
-        /* DECISION FLOW / ALTERNATIVES */
-        .alternative-box {
-            border: var(--border-width) dashed var(--accent-pink);
-            background-color: #1a1116;
-            padding: 20px;
-            margin-bottom: 40px;
-        }
+ /* DECISION FLOW / ALTERNATIVES */
+ .alternative-box {
+ border: var(--border-width) dashed var(--accent-pink);
+ background-color: #1a1116;
+ padding: 20px;
+ margin-bottom: 40px;
+ }
 
-        .alternative-box h3 {
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: var(--accent-pink);
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
+ .alternative-box h3 {
+ font-size: 1.15rem;
+ font-weight: 800;
+ color: var(--accent-pink);
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ }
 
-        .alt-route {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
+ .alt-route {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-bottom: 12px;
+ font-size: 0.95rem;
+ }
 
-        .alt-route span.route-step {
-            background-color: var(--text-color);
-            color: #000;
-            padding: 2px 6px;
-            font-weight: 800;
-            font-size: 0.8rem;
-        }
+ .alt-route span.route-step {
+ background-color: var(--text-color);
+ color: #000;
+ padding: 2px 6px;
+ font-weight: 800;
+ font-size: 0.8rem;
+ }
 
-        .alt-route span.arrow {
-            color: var(--accent-yellow);
-            font-weight: 900;
-        }
+ .alt-route span.arrow {
+ color: var(--accent-yellow);
+ font-weight: 900;
+ }
 
-        /* FAQ SECTION */
-        .faq-section {
-            margin-bottom: 40px;
-        }
+ /* FAQ SECTION */
+ .faq-section {
+ margin-bottom: 40px;
+ }
 
-        .faq-item {
-            border: var(--border-width) solid var(--text-color);
-            background-color: var(--dark-gray);
-            margin-bottom: 15px;
-            padding: 15px;
-        }
+ .faq-item {
+ border: var(--border-width) solid var(--text-color);
+ background-color: var(--dark-gray);
+ margin-bottom: 15px;
+ padding: 15px;
+ }
 
-        .faq-question {
-            font-size: 1rem;
-            font-weight: 800;
-            color: var(--accent-cyan);
-            margin-bottom: 8px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
+ .faq-question {
+ font-size: 1rem;
+ font-weight: 800;
+ color: var(--accent-cyan);
+ margin-bottom: 8px;
+ display: flex;
+ align-items: flex-start;
+ gap: 10px;
+ }
 
-        .faq-answer {
-            font-size: 0.9rem;
-            color: var(--light-gray);
-            line-height: 1.5;
-        }
+ .faq-answer {
+ font-size: 0.9rem;
+ color: var(--light-gray);
+ line-height: 1.5;
+ }
 
-        /* FOOTER */
-        footer {
-            border-top: var(--border-width) solid var(--text-color);
-            padding-top: 20px;
-            margin-top: 50px;
-            color: var(--light-gray);
-            font-size: 0.8rem;
-            line-height: 1.6;
-        }
+ /* FOOTER */
+ footer {
+ border-top: var(--border-width) solid var(--text-color);
+ padding-top: 20px;
+ margin-top: 50px;
+ color: var(--light-gray);
+ font-size: 0.8rem;
+ line-height: 1.6;
+ }
 
-        .footer-logo {
-            font-weight: 900;
-            color: var(--accent-pink);
-            margin-bottom: 10px;
-            font-size: 1rem;
-        }
+ .footer-logo {
+ font-weight: 900;
+ color: var(--accent-pink);
+ margin-bottom: 10px;
+ font-size: 1rem;
+ }
 
-        .footer-links {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
+ .footer-links {
+ display: flex;
+ gap: 15px;
+ margin-bottom: 15px;
+ flex-wrap: wrap;
+ }
 
-        .footer-links a {
-            color: var(--light-gray);
-            text-decoration: underline;
-        }
+ .footer-links a {
+ color: var(--light-gray);
+ text-decoration: underline;
+ }
 
-        .footer-links a:hover {
-            color: var(--accent-cyan);
-        }
+ .footer-links a:hover {
+ color: var(--accent-cyan);
+ }
 
-        /* UTILITIES */
-        .text-accent {
-            color: var(--accent-cyan);
-        }
-        .text-pink {
-            color: var(--accent-pink);
-        }
-    </style>
+ /* UTILITIES */
+ .text-accent {
+ color: var(--accent-cyan);
+ }
+ .text-pink {
+ color: var(--accent-pink);
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
-    <div class="container">
-        
-        <!-- HEADER -->
-        <header>
-            <div class="logo-area">Night Transit</div>
-            <nav>
-                <a href="https://essay.go-bangbae-room.xyz" class="active">업종 비교</a>
-                <a href="#transit-map">4대 비교축</a>
-                <a href="#alternative-guide">대안 노선도</a>
-                <a href="#faq">자주 묻는 질문</a>
-            </nav>
-        </header>
+ <div class="container">
+ 
+ <!-- HEADER -->
+ <header>
+ <div class="logo-area">Night Transit</div>
+ <nav>
+ <a href="https://essay.go-bangbae-room.xyz" class="active">업종 비교</a>
+ <a href="#transit-map">4대 비교축</a>
+ <a href="#alternative-guide">대안 노선도</a>
+ <a href="#faq">자주 묻는 질문</a>
+ </nav>
+ </header>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <span class="badge">Sector Analysis</span>
-            <h1>유흥 업종 비교<br>길 잃지 않는 밤의 노선도</h1>
-            <p>
-                솔직히 처음 밤거리에 나서면 뭐가 뭔지 하나도 모르겠더라고요. 셔츠룸은 뭐고 가라오케는 또 뭐가 다른지, 내 목적과 예산에는 어디가 맞는지 헷갈리기 마련이죠. 복잡한 설명은 빼고, 딱 4가지 기준(가격·분위기·인원·목적)으로 서울의 주요 밤문화 업종을 한눈에 비교해 드릴게요.
-            </p>
-        </section>
+ <!-- HERO SECTION -->
+ <section class="hero">
+ <span class="badge">Sector Analysis</span>
+ <h1>유흥 업종 비교<br>길 잃지 않는 밤의 노선도</h1>
+ <p>
+ 솔직히 처음 밤거리에 나서면 뭐가 뭔지 하나도 모르겠더라고요. 셔츠룸은 뭐고 가라오케는 또 뭐가 다른지, 내 목적과 예산에는 어디가 맞는지 헷갈리기 마련이죠. 복잡한 설명은 빼고, 딱 4가지 기준(가격·분위기·인원·목적)으로 서울의 주요 밤문화 업종을 한눈에 비교해 드릴게요.
+ </p>
+ </section>
 
-        <!-- PERSONAL ANECDOTE -->
-        <div class="anecdote-box">
-            <p><strong>💡 가벼운 이야기 하나 해볼게요.</strong></p>
-            <p>
-                저번에 친구가 오랜만에 서울에 와서 "조용히 얘기하면서 한잔할 곳 없냐"고 묻더군요. 생각 없이 근처 아무 데나 들어갔다가, 너무 시끌벅적하고 어수선한 시스템 때문에 대화는커녕 소리만 지르다 나온 적이 있어요. 그때 깨달았죠. '아, 각 업종마다 최적의 운행 노선이 있구나!' 여러분은 이런 시행착오를 겪지 않으셨으면 해요.
-            </p>
-        </div>
+ <!-- PERSONAL ANECDOTE -->
+ <div class="anecdote-box">
+ <p><strong>💡 가벼운 이야기 하나 해볼게요.</strong></p>
+ <p>
+ 저번에 친구가 오랜만에 서울에 와서 "조용히 얘기하면서 한잔할 곳 없냐"고 묻더군요. 생각 없이 근처 아무 데나 들어갔다가, 너무 시끌벅적하고 어수선한 시스템 때문에 대화는커녕 소리만 지르다 나온 적이 있어요. 그때 깨달았죠. '아, 각 업종마다 최적의 운행 노선이 있구나!' 여러분은 이런 시행착오를 겪지 않으셨으면 해요.
+ </p>
+ </div>
 
-        <!-- SECTION 1: THE 4 PILLARS -->
-        <section id="transit-map">
-            <h2 class="section-title"><span>01.</span> 밤을 분류하는 4대 축선</h2>
-            <p style="margin-bottom: 20px; font-size: 0.95rem; color: var(--light-gray);">
-                우리가 목적지를 정할 때 지하철 노선을 보듯, 유흥 업종 비교 역시 명확한 기준선이 필요합니다. 아래 4가지 축을 기준으로 나만의 행선지를 그려보세요.
-            </p>
+ <!-- SECTION 1: THE 4 PILLARS -->
+ <section id="transit-map">
+ <h2 class="section-title"><span>01.</span> 밤을 분류하는 4대 축선</h2>
+ <p style="margin-bottom: 20px; font-size: 0.95rem; color: var(--light-gray);">
+ 우리가 목적지를 정할 때 지하철 노선을 보듯, 유흥 업종 비교 역시 명확한 기준선이 필요합니다. 아래 4가지 축을 기준으로 나만의 행선지를 그려보세요.
+ </p>
 
-            <div class="line-container">
-                
-                <!-- Line 1 -->
-                <div class="line-card">
-                    <div class="line-header">
-                        <div class="line-name">
-                            <span class="line-dot dot-cyan"></span>
-                            비용 & 프라이빗 축선
-                        </div>
-                        <span class="line-meta">셔츠룸 / 룸싸롱 계열</span>
-                    </div>
-                    <div class="line-body">
-                        <p>
-                            밀폐된 독립 공간과 체계화된 시스템이 중심이 되는 노선입니다. 정해진 시간 동안 완벽하게 분리된 프라이버시를 보장받고 싶을 때 선택하는 정석적인 코스라 할 수 있죠. 상대적으로 지출 규모가 명확히 정해져 있는 편입니다.
-                        </p>
-                        <div class="line-tags">
-                            <span class="tag">철저한 보안</span>
-                            <span class="tag">비즈니스 접대</span>
-                            <span class="tag">정찰제 성격</span>
-                        </div>
-                    </div>
-                </div>
+ <div class="line-container">
+ 
+ <!-- Line 1 -->
+ <div class="line-card">
+ <div class="line-header">
+ <div class="line-name">
+ <span class="line-dot dot-cyan"></span>
+ 비용 & 프라이빗 축선
+ </div>
+ <span class="line-meta">셔츠룸 / 룸싸롱 계열</span>
+ </div>
+ <div class="line-body">
+ <p>
+ 밀폐된 독립 공간과 체계화된 시스템이 중심이 되는 노선입니다. 정해진 시간 동안 완벽하게 분리된 프라이버시를 보장받고 싶을 때 선택하는 정석적인 코스라 할 수 있죠. 상대적으로 지출 규모가 명확히 정해져 있는 편입니다.
+ </p>
+ <div class="line-tags">
+ <span class="tag">철저한 보안</span>
+ <span class="tag">비즈니스 접대</span>
+ <span class="tag">정찰제 성격</span>
+ </div>
+ </div>
+ </div>
 
-                <!-- Line 2 -->
-                <div class="line-card pink">
-                    <div class="line-header">
-                        <div class="line-name">
-                            <span class="line-dot dot-pink"></span>
-                            캐주얼 & 가성비 축선
-                        </div>
-                        <span class="line-meta">가라오케 / 뮤직펍 계열</span>
-                    </div>
-                    <div class="line-body">
-                        <p>
-                            비교적 진입 장벽이 낮고, 노래와 술을 함께 즐길 수 있는 자유로운 대중 노선입니다. 친구들과 모임이나 생일 파티처럼 격식 없이 신나게 노는 분위기에 최적화되어 있습니다. 시간당 비용 부담이 덜한 편입니다.
-                        </p>
-                        <div class="line-tags">
-                            <span class="tag">단체 모임</span>
-                            <span class="tag">음악과 노래</span>
-                            <span class="tag">부담 없는 선택</span>
-                        </div>
-                    </div>
-                </div>
+ <!-- Line 2 -->
+ <div class="line-card pink">
+ <div class="line-header">
+ <div class="line-name">
+ <span class="line-dot dot-pink"></span>
+ 캐주얼 & 가성비 축선
+ </div>
+ <span class="line-meta">가라오케 / 뮤직펍 계열</span>
+ </div>
+ <div class="line-body">
+ <p>
+ 비교적 진입 장벽이 낮고, 노래와 술을 함께 즐길 수 있는 자유로운 대중 노선입니다. 친구들과 모임이나 생일 파티처럼 격식 없이 신나게 노는 분위기에 최적화되어 있습니다. 시간당 비용 부담이 덜한 편입니다.
+ </p>
+ <div class="line-tags">
+ <span class="tag">단체 모임</span>
+ <span class="tag">음악과 노래</span>
+ <span class="tag">부담 없는 선택</span>
+ </div>
+ </div>
+ </div>
 
-                <!-- Line 3 -->
-                <div class="line-card">
-                    <div class="line-header">
-                        <div class="line-name">
-                            <span class="line-dot dot-yellow"></span>
-                            하이엔드 & 퀄리티 축선
-                        </div>
-                        <span class="line-meta">텐프로 / 점오 계열</span>
-                    </div>
-                    <div class="line-body">
-                        <p>
-                            단순한 음주를 넘어 최상의 서비스와 격조 높은 분위기를 지향하는 고급 노선입니다. 중요한 비즈니스 성사나 특별한 예우가 필요한 자리에 주로 이용되며, 그에 상응하는 높은 예산 설계가 요구됩니다.
-                        </p>
-                        <div class="line-tags">
-                            <span class="tag">VIP 에스코트</span>
-                            <span class="tag">최고급 인테리어</span>
-                            <span class="tag">프리미엄 지향</span>
-                        </div>
-                    </div>
-                </div>
+ <!-- Line 3 -->
+ <div class="line-card">
+ <div class="line-header">
+ <div class="line-name">
+ <span class="line-dot dot-yellow"></span>
+ 하이엔드 & 퀄리티 축선
+ </div>
+ <span class="line-meta">텐프로 / 점오 계열</span>
+ </div>
+ <div class="line-body">
+ <p>
+ 단순한 음주를 넘어 최상의 서비스와 격조 높은 분위기를 지향하는 고급 노선입니다. 중요한 비즈니스 성사나 특별한 예우가 필요한 자리에 주로 이용되며, 그에 상응하는 높은 예산 설계가 요구됩니다.
+ </p>
+ <div class="line-tags">
+ <span class="tag">VIP 에스코트</span>
+ <span class="tag">최고급 인테리어</span>
+ <span class="tag">프리미엄 지향</span>
+ </div>
+ </div>
+ </div>
 
-            </div>
-        </section>
+ </div>
+ </section>
 
-        <!-- SECTION 2: COMPARISON TABLE -->
-        <section>
-            <h2 class="section-title"><span>02.</span> 한눈에 보는 비교 매트릭스</h2>
-            <p style="margin-bottom: 20px; font-size: 0.95rem; color: var(--light-gray);">
-                핵심적인 차이점을 표로 직관적으로 정리했습니다. 각 업종의 성격을 비교해 보고 나에게 맞는 최적의 정류장을 찾아보세요.
-            </p>
+ <!-- SECTION 2: COMPARISON TABLE -->
+ <section>
+ <h2 class="section-title"><span>02.</span> 한눈에 보는 비교 매트릭스</h2>
+ <p style="margin-bottom: 20px; font-size: 0.95rem; color: var(--light-gray);">
+ 핵심적인 차이점을 표로 직관적으로 정리했습니다. 각 업종의 성격을 비교해 보고 나에게 맞는 최적의 정류장을 찾아보세요.
+ </p>
 
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>구분</th>
-                            <th>셔츠룸 / 일반룸</th>
-                            <th>가라오케 / 펍</th>
-                            <th>텐프로 / 하이엔드</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="highlight">주요 목적</td>
-                            <td>프라이빗한 음주, 확실한 컨셉</td>
-                            <td>단체 회식, 노래 및 친목 도모</td>
-                            <td>격조 높은 접대, 중요 비즈니스</td>
-                        </tr>
-                        <tr>
-                            <td class="highlight">분위기</td>
-                            <td>밀폐형, 체계적인 시스템</td>
-                            <td>개방적 혹은 캐주얼한 룸</td>
-                            <td>정적이고 품격 있는 사적 공간</td>
-                        </tr>
-                        <tr>
-                            <td class="highlight">추천 인원</td>
-                            <td>1인 ~ 4인 소규모</td>
-                            <td>4인 이상 단체 권장</td>
-                            <td>소수 정예 (바이어 동반)</td>
-                        </tr>
-                        <tr>
-                            <td class="highlight">예산 수준</td>
-                            <td>중간 (정찰제 위주)</td>
-                            <td>상대적 저렴 (가성비 우수)</td>
-                            <td>높음 (추가 비용 발생 빈번)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+ <div class="table-responsive">
+ <table>
+ <thead>
+ <tr>
+ <th>구분</th>
+ <th>셔츠룸 / 일반룸</th>
+ <th>가라오케 / 펍</th>
+ <th>텐프로 / 하이엔드</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td class="highlight">주요 목적</td>
+ <td>프라이빗한 음주, 확실한 컨셉</td>
+ <td>단체 회식, 노래 및 친목 도모</td>
+ <td>격조 높은 접대, 중요 비즈니스</td>
+ </tr>
+ <tr>
+ <td class="highlight">분위기</td>
+ <td>밀폐형, 체계적인 시스템</td>
+ <td>개방적 혹은 캐주얼한 룸</td>
+ <td>정적이고 품격 있는 사적 공간</td>
+ </tr>
+ <tr>
+ <td class="highlight">추천 인원</td>
+ <td>1인 ~ 4인 소규모</td>
+ <td>4인 이상 단체 권장</td>
+ <td>소수 정예 (바이어 동반)</td>
+ </tr>
+ <tr>
+ <td class="highlight">예산 수준</td>
+ <td>중간 (정찰제 위주)</td>
+ <td>상대적 저렴 (가성비 우수)</td>
+ <td>높음 (추가 비용 발생 빈번)</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
 
-        <!-- SECTION 3: ALTERNATIVE ROUTES -->
-        <section id="alternative-guide">
-            <h2 class="section-title"><span>03.</span> 상황별 대안 노선 가이드</h2>
-            
-            <div class="alternative-box">
-                <h3>💡 예산이 초과될 것 같을 때의 환승법</h3>
-                
-                <div class="alt-route">
-                    <span class="route-step">출발지</span> <span>텐프로 / 하이엔드</span> 
-                    <span class="arrow">➔</span> 
-                    <span class="route-step" style="background-color: var(--accent-cyan);">대안 환승</span> <span class="text-accent">셔츠룸 혹은 세미 정통룸</span>
-                </div>
-                <p style="font-size: 0.9rem; color: var(--light-gray); margin-bottom: 15px;">
-                    최상위 클래스의 예산이 부담스럽다면 시스템이 고정되어 정찰제 성격을 띠는 셔츠룸이나 세미 룸싸롱 노선으로 갈아타는 것이 현명합니다. 비용의 투명성이 확보되어 예상치 못한 지출을 방지할 수 있습니다.
-                </p>
+ <!-- SECTION 3: ALTERNATIVE ROUTES -->
+ <section id="alternative-guide">
+ <h2 class="section-title"><span>03.</span> 상황별 대안 노선 가이드</h2>
+ 
+ <div class="alternative-box">
+ <h3>💡 예산이 초과될 것 같을 때의 환승법</h3>
+ 
+ <div class="alt-route">
+ <span class="route-step">출발지</span> <span>텐프로 / 하이엔드</span> 
+ <span class="arrow">➔</span> 
+ <span class="route-step" style="background-color: var(--accent-cyan);">대안 환승</span> <span class="text-accent">셔츠룸 혹은 세미 정통룸</span>
+ </div>
+ <p style="font-size: 0.9rem; color: var(--light-gray); margin-bottom: 15px;">
+ 최상위 클래스의 예산이 부담스럽다면 시스템이 고정되어 정찰제 성격을 띠는 셔츠룸이나 세미 룸싸롱 노선으로 갈아타는 것이 현명합니다. 비용의 투명성이 확보되어 예상치 못한 지출을 방지할 수 있습니다.
+ </p>
 
-                <div class="alt-route">
-                    <span class="route-step">출발지</span> <span>일반 룸싸롱</span> 
-                    <span class="arrow">➔</span> 
-                    <span class="route-step" style="background-color: var(--accent-pink); color: #fff;">대안 환승</span> <span class="text-pink">대형 가라오케</span>
-                </div>
-                <p style="font-size: 0.9rem; color: var(--light-gray);">
-                    조금 더 자유로운 분위기에서 가볍게 마시고 노래하는 것이 목적이라면, 무거운 룸싸롱보다는 대형 가라오케로 우회하여 세트 메뉴 위주로 세팅하는 것이 지출을 대폭 줄이는 방법입니다.
-                </p>
-            </div>
-        </section>
+ <div class="alt-route">
+ <span class="route-step">출발지</span> <span>일반 룸싸롱</span> 
+ <span class="arrow">➔</span> 
+ <span class="route-step" style="background-color: var(--accent-pink); color: #fff;">대안 환승</span> <span class="text-pink">대형 가라오케</span>
+ </div>
+ <p style="font-size: 0.9rem; color: var(--light-gray);">
+ 조금 더 자유로운 분위기에서 가볍게 마시고 노래하는 것이 목적이라면, 무거운 룸싸롱보다는 대형 가라오케로 우회하여 세트 메뉴 위주로 세팅하는 것이 지출을 대폭 줄이는 방법입니다.
+ </p>
+ </div>
+ </section>
 
-        <!-- SECTION 4: FAQ -->
-        <section id="faq" class="faq-section">
-            <h2 class="section-title"><span>04.</span> 자주 묻는 질문 (FAQ)</h2>
+ <!-- SECTION 4: FAQ -->
+ <section id="faq" class="faq-section">
+ <h2 class="section-title"><span>04.</span> 자주 묻는 질문 (FAQ)</h2>
 
-            <div class="faq-item">
-                <div class="faq-question">Q. 처음 가보는데 바가지를 쓰지 않으려면 어떻게 해야 하나요?</div>
-                <div class="faq-answer">
-                    정찰제 시스템이 명확하게 정립된 업종(예: 대형 셔츠룸이나 퍼블릭 가라오케)을 선택하는 것이 안전합니다. 입실 전에 기본 세트 주류와 시간당 추가 비용을 담당 매니저에게 명확히 확인받는 습관이 중요합니다.
-                </div>
-            </div>
+ <div class="faq-item">
+ <div class="faq-question">Q. 처음 가보는데 바가지를 쓰지 않으려면 어떻게 해야 하나요?</div>
+ <div class="faq-answer">
+ 정찰제 시스템이 명확하게 정립된 업종(예: 대형 셔츠룸이나 퍼블릭 가라오케)을 선택하는 것이 안전합니다. 입실 전에 기본 세트 주류와 시간당 추가 비용을 담당 매니저에게 명확히 확인받는 습관이 중요합니다.
+ </div>
+ </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Q. 비즈니스 접대 자리에 가장 무난한 업종은 무엇인가요?</div>
-                <div class="faq-answer">
-                    격식이 필요하고 상대방의 취향을 깊게 모를 때는 소음이 적고 조용한 대화가 가능한 정통 룸싸롱이나 하이엔드급 공간이 적합합니다. 반면, 상대방이 캐주얼하고 흥겨운 분위기를 좋아한다면 고급 가라오케도 훌륭한 대안이 됩니다.
-                </div>
-            </div>
+ <div class="faq-item">
+ <div class="faq-question">Q. 비즈니스 접대 자리에 가장 무난한 업종은 무엇인가요?</div>
+ <div class="faq-answer">
+ 격식이 필요하고 상대방의 취향을 깊게 모를 때는 소음이 적고 조용한 대화가 가능한 정통 룸싸롱이나 하이엔드급 공간이 적합합니다. 반면, 상대방이 캐주얼하고 흥겨운 분위기를 좋아한다면 고급 가라오케도 훌륭한 대안이 됩니다.
+ </div>
+ </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Q. 혼자서 방문하기에 적당한 업종도 있나요?</div>
-                <div class="faq-answer">
-                    최근에는 1인 방문객(혼술족)을 위한 맞춤형 시스템을 제공하는 셔츠룸이나 소형 룸 형태의 업소들이 많아졌습니다. 단체 중심의 가라오케보다는 1:1 케어가 용이한 소형 룸 시스템을 선택하는 것이 시간 대비 만족도가 높습니다.
-                </div>
-            </div>
-        </section>
+ <div class="faq-item">
+ <div class="faq-question">Q. 혼자서 방문하기에 적당한 업종도 있나요?</div>
+ <div class="faq-answer">
+ 최근에는 1인 방문객(혼술족)을 위한 맞춤형 시스템을 제공하는 셔츠룸이나 소형 룸 형태의 업소들이 많아졌습니다. 단체 중심의 가라오케보다는 1:1 케어가 용이한 소형 룸 시스템을 선택하는 것이 시간 대비 만족도가 높습니다.
+ </div>
+ </div>
+ </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-logo">NIGHT TRANSIT MAP</div>
-            <div class="footer-links">
-                <a href="https://essay.go-bangbae-room.xyz">홈으로</a>
-                <a href="#transit-map">4대 비교축</a>
-                <a href="#alternative-guide">대안 가이드</a>
-            </div>
-            <p>
-                본 블로그는 서울 밤문화 업종에 대한 정보성 비교 분석을 제공하는 공간입니다. 제공되는 정보는 시장의 평균적인 성향을 바탕으로 작성되었으며, 개별 업소의 운영 방식에 따라 실제 내용과 다를 수 있습니다. 합리적이고 안전한 선택에 도움이 되길 바랍니다.
-            </p>
-            <p style="margin-top: 15px; color: var(--accent-pink);">
-                © Night Transit Map. All Rights Reserved.
-            </p>
-        </footer>
+ <!-- FOOTER -->
+ <footer>
+ <div class="footer-logo">NIGHT TRANSIT MAP</div>
+ <div class="footer-links">
+ <a href="https://essay.go-bangbae-room.xyz">홈으로</a>
+ <a href="#transit-map">4대 비교축</a>
+ <a href="#alternative-guide">대안 가이드</a>
+ </div>
+ <p>
+ 본 블로그는 서울 밤문화 업종에 대한 정보성 비교 분석을 제공하는 공간입니다. 제공되는 정보는 시장의 평균적인 성향을 바탕으로 작성되었으며, 개별 업소의 운영 방식에 따라 실제 내용과 다를 수 있습니다. 합리적이고 안전한 선택에 도움이 되길 바랍니다.
+ </p>
+ <p style="margin-top: 15px; color: var(--accent-pink);">
+ © Night Transit Map. All Rights Reserved.
+ </p>
+ </footer>
 
-    </div>
+ </div>
 
 </body>
 </html>
